@@ -73,9 +73,6 @@
       <div class="nav-dropdown-content-item"><div class="nav-option">
         <label for="version" onclick="return changeVersion(2,'');"><input id="version2" type="radio" name="version" checked>&nbsp;Path of Diablo&nbsp;&nbsp;</label>
       </div></div>
-      <div class="nav-dropdown-content-item"><div class="nav-option">
-        <label for="version" onclick="return changeVersion(3,'');"><input id="version3" type="radio" name="version">&nbsp;Project D2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-      </div></div>
     </div>
   </div>
   <div class="nav-dropdown">
@@ -630,7 +627,7 @@ function initial_load() {
 	
 	// begin program
 	if (version != 2) {
-		changeVersion(version, initial_class)	// version = Project D2 or vanilla
+		changeVersion(version, initial_class)	// version = vanilla
 	} else {
 		startup(initial_class)	// version = Path of Diablo  (default)
 	}

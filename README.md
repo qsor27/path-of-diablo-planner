@@ -62,4 +62,4 @@ This planner is open-source, so improvements can be contributed by anyone throug
 * Edit the files
 * Submit a pull request (i.e. request your changes be pulled into this version)
 
-### Originally created by BetweenWalls, the planner was forked to allow the PoD team to edit and update the planner in a timely fashion and without depending on one user.
+##### Originally created by BetweenWalls, the planner was forked to allow the PoD team to edit and update the planner in a timely fashion and without depending on one user.

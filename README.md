@@ -1,15 +1,9 @@
-# [Portal](https://BetweenWalls.github.io/portal/)
+Character Planner for Path of Diablo
 
-Character Planner for Diablo 2 (Vanilla, Path of Diablo, Project Diablo II)
-
-### [Download](https://github.com/BetweenWalls/portal/archive/master.zip)
-
-### Features (All Versions):
+### Features:
 * all skill info up to level 60 & synergy calculations
 * charm inventory
 * saving/loading, URL-sharing
-
-### Additional Features (PoD):
 * equipment selection & modification (corrupting, socketing, upgrading)
 * skill damage calculation
 * all character stats
@@ -28,7 +22,7 @@ Character Planner for Diablo 2 (Vanilla, Path of Diablo, Project Diablo II)
 #### Mobile Users:
 If your phone doesn't have a way to emulate ctrl+click or shift+click, you can still use the URL to enter any character info. Toggle *Shareable URL* in the menu to see how it should be formatted. Example:
 
-https://betweenwalls.github.io/portal/?v=PoD&class=sorceress&level=99&quests=1&strength=45&vitality=460
+/portal/?v=PoD&class=sorceress&level=99&quests=1&strength=45&vitality=460
 
 ### Known Issues:
 * Charms can't be moved into a new space below the original space if those spaces overlap
@@ -61,12 +55,11 @@ https://betweenwalls.github.io/portal/?v=PoD&class=sorceress&level=99&quests=1&s
 * pvp info
 * dynamic item/skill recommendations
 
-### Feedback:
-Please report errors and incorrect information. Other feedback is welcome too.
+### Contribute:
 
-Send feedback to [BetweenWalls](https://www.reddit.com/message/compose/?to=BetweenWalls) on reddit or @BetweenWalls#2390 on discord, or open an issue here.
-
-Portal is open-source, so improvements can be contributed by anyone through github. Here are the basic steps:
+This planner is open-source, so improvements can be contributed by anyone through github. Here are the basic steps:
 * Create a duplicate version of this repository (fork)
 * Edit the files
 * Submit a pull request (i.e. request your changes be pulled into this version)
+
+### Originally created by BetweenWalls, the planner was forked to allow the PoD team to edit and update the planner in a timely fashion and without depending on one user.

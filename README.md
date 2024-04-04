@@ -58,7 +58,7 @@ https://build.pathofdiablo.com/?v=2&class=sorceress&level=99&quests=1&strength=4
 ### Contribute:
 
 This planner is open-source, so improvements can be contributed by anyone through github. Here are the basic steps:
-* Create a duplicate version of this repository (fork)
+* Create a [fork](https://github.com/GreenDude120/path-of-diablo-planner/fork) (duplicate) of this repository
 * Edit the files
 * Submit a pull request (i.e. request your changes be pulled into this version)
 

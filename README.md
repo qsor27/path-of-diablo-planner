@@ -1,4 +1,4 @@
-Planner for Character Builds in Path of Diablo
+##Planner for Character Builds in Path of Diablo
 
 ### Features:
 * all skill info up to level 60 & synergy calculations

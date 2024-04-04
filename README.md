@@ -22,7 +22,7 @@
 #### Mobile Users:
 If your phone doesn't have a way to emulate ctrl+click or shift+click, you can still use the URL to enter any character info. Toggle *Shareable URL* in the menu to see how it should be formatted. Example:
 
-/portal/?v=PoD&class=sorceress&level=99&quests=1&strength=45&vitality=460
+https://build.pathofdiablo.com/?v=2&class=sorceress&level=99&quests=1&strength=45&vitality=460
 
 ### Known Issues:
 * Charms can't be moved into a new space below the original space if those spaces overlap

@@ -57,9 +57,24 @@ https://build.pathofdiablo.com/?v=2&class=sorceress&level=99&quests=1&strength=4
 
 ### Contribute:
 
+#### Updating Incorrect/Outdated Skill Data:
+
+The planner automatically pulls the information from our wiki. All PoD players with a trade account have a wiki account automatically. Log in to our wiki using the same login info as trade account and edit the skill data in the following pages:
+
+* [Amazon.js](https://pathofdiablo.com/wiki/index.php?title=Amazon.js)
+* [Barbarian.js](https://pathofdiablo.com/wiki/index.php?title=Barbarian.js)
+* [Assassin.js](https://pathofdiablo.com/wiki/index.php?title=Assassin.js)
+* [Druid.js](https://pathofdiablo.com/wiki/index.php?title=Druid.js)
+* [Necromancer.js](https://pathofdiablo.com/wiki/index.php?title=Necromancer.js)
+* [Paladin.js](https://pathofdiablo.com/wiki/index.php?title=Paladin.js)
+* [Sorceress.js](https://pathofdiablo.com/wiki/index.php?title=Sorceress.js)
+
+#### Improvements to the underlying code:
 This planner is open-source, so improvements can be contributed by anyone through github. Here are the basic steps:
 * Create a [fork](https://github.com/GreenDude120/path-of-diablo-planner/fork) (duplicate) of this repository
 * Edit the files
 * Submit a pull request (i.e. request your changes be pulled into this version)
 
-##### Originally created by BetweenWalls, the planner was forked to allow the PoD team to edit and update the planner in a timely fashion and without depending on one user.
+### Credits:
+
+Originally created by BetweenWalls, the planner was forked to allow the PoD team & community to edit and update the planner in a timely fashion and without depending on a single user.

@@ -42,6 +42,7 @@ var character_sorceress = {class_name:"Sorceress", strength:10, dexterity:25, vi
 		if (skill.name == "Thunder Storm" && elem < 4 && elem > 1) { 	result *= ((1 + (0.21*sk[13].level + 0.21*sk[15].level)) * (1+c.lDamage/100)) }
 		
 		if (skill.name == "Fire Bolt" && elem < 2) { 					result *= ((1 + (0.35*sk[26].level + 0.35*sk[27].level + 0.35*sk[29].level)) * (1+c.fDamage/100)) }
+		if (skill.name == "Inferno" && elem < 2) {						result *= ((1 + 0.13*sk[21].level) * (1+c.fDamage/100)) }
 		if (skill.name == "Blaze" && elem < 3 && elem > 0) { 			result *= ((1 + (0.08*sk[25].level + 0.03*sk[23].level)) * (1+c.fDamage/100)) }
 		if (skill.name == "Immolate" && elem < 2) { 					result *= ((1 + (0.04*sk[23].level)) * (1+c.fDamage/100)) }
 		if (skill.name == "Fire Ball" && elem < 2) { 					result *= ((1 + (0.06*sk[22].level + 0.06*sk[29].level)) * (1+c.fDamage/100)) }

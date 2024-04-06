@@ -68,6 +68,7 @@ The planner automatically pulls the information from our wiki. All PoD players w
 * [Necromancer.js](https://pathofdiablo.com/wiki/index.php?title=Necromancer.js)
 * [Paladin.js](https://pathofdiablo.com/wiki/index.php?title=Paladin.js)
 * [Sorceress.js](https://pathofdiablo.com/wiki/index.php?title=Sorceress.js)
+* [Universalskills.js](https://pathofdiablo.com/wiki/index.php?title=Universalskills.js)
 
 #### Improvements to the underlying code:
 This planner is open-source, so improvements can be contributed by anyone through github. Here are the basic steps:

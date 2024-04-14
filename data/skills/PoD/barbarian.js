@@ -19,7 +19,7 @@ var character_barbarian = {class_name:"Barbarian", strength:30, dexterity:20, vi
 		//if (skill.name == "War Cry" && elem == 2) { 		result = Math.floor((1+result/100)*8) }	// TOCHECK: replace 8 with actual radius (show total radius instead of radius bonus?)
 		if (skill.name == "Battle Command" && elem == 0) { 	result = 1+Math.floor(skill.level/10) }
 		
-		if (skill.name == "Pulverize" && elem < 2) { 		result *= (1 + 0.06*skills[8].level) }
+		if (skill.name == "Whirling Axes" && elem < 2) { 		result *= (1 + 0.06*skills[8].level) }
 		
 		if (skill.name == "Double Swing" && elem == 0) { 	result += (5*skills[24].level) }
 		if (skill.name == "Frenzy" && elem == 0) { 			result = skills[24].level }
@@ -60,7 +60,7 @@ var character_barbarian = {class_name:"Barbarian", strength:30, dexterity:20, vi
 		if (skill.name == "Natural Resistance") { result.resistance_skillup = skill.data.values[0][lvl]; }
 		if (skill.name == "Counter Attack") { result.counterattack = skill.data.values[0][lvl]; }
 		if (skill.name == "Puncture") { result.owounds = skill.data.values[0][lvl]; }
-		if (skill.name == "Pulverize") { result.pulverize = skill.data.values[2][lvl]; }
+		if (skill.name == "Whirling Axes") { result.whirlingaxes = skill.data.values[2][lvl]; }
 		// Debuffs:
 		if (skill.name == "Howl") { result.flee_distance = skill.data.values[0][lvl]; result.duration = skill.data.values[1][lvl]; }
 		if (skill.name == "Taunt") { result.enemy_damage = skill.data.values[0][lvl]; result.enemy_attack = skill.data.values[1][lvl]; }	// duration unlisted
@@ -293,10 +293,10 @@ var character_barbarian = {class_name:"Barbarian", strength:30, dexterity:20, vi
 		["open wounds",4,7,9,11,13,14,15,15,16,17,18,18,19,19,19,20,20,20,20,21,21,21,21,22,22,22,22,22,22,22,23,23,23,23,23,23,23,23,23,23,23,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,25,], 
 		["bleed damage",1,2,3,4,5,7,8,9,10,11,12,13,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,], 
 ]};
-/*[31] Pulverize		*/ var d262 = {values:[
-		["damage min",9,13,17,21,25,29,33,37,43,49,55,61,67,73,79,85,94,103,112,121,130,139,150,161,172,183,194,205,220,235,250,265,280,295,310,325,340,355,370,385,400,415,430,445,460,475,490,505,520,535,550,565,580,595,610,625,640,655,670,685,], 
-		["damage max",15,20,25,30,35,40,45,50,58,66,74,82,90,97,105,113,126,138,150,161,174,186,200,214,228,242,256,270,288,306,324,342,360,378,396,414,432,450,468,486,504,522,540,558,576,594,612,630,648,666,684,702,720,738,756,774,792,810,828,846,], 
-		["chance",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,], 
+/*[31] Whirling Axes		*/ var d262 = {values:[
+		["damage min",11,16,22,27,32,37,42,48,55,63,71,79,87,94,102,110,122,133,145,157,685,], 
+		["damage max",19,26,32,39,45,52,58,65,75,85,96,106,117,127,137,148,163,179,195,210,846,], 
+		["chance",4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100,102,104,106,], 
 ]};
 
 var skills_barbarian = [
@@ -336,5 +336,5 @@ var skills_barbarian = [
 
 {data:d232, key:"232", code:310, name:"Counter Attack", i:29, req:[], reqlvl:12, level:0, extra_levels:0, force_levels:0, effect:1, bindable:0, description:"Hit back your attackers with main hand weapon<br><br>Deals 100% of Weapon Damage", syn_title:"", syn_text:"", graytext:"", index:[0,""], text:["Chance to counter attack: "," percent"], incomplete:1},
 {data:d252, key:"252", code:311, name:"Puncture", i:30, req:[], reqlvl:24, level:0, extra_levels:0, force_levels:0, effect:1, bindable:0, description:"Opens a deep wound in the flesh of enemies", syn_title:"", syn_text:"", graytext:"", index:[0,""], text:[""," percent chance to Open Wounds<br>Wounds Bleed Damage: "," per second"], incomplete:1},
-{data:d262, key:"262", code:312, name:"Pulverize", i:31, req:[], reqlvl:30, level:0, extra_levels:0, force_levels:0, effect:1, bindable:0, description:"Attacks unleash powerful pulverizing forces", syn_title:"<br>Pulverize Receives Bonuses From:<br>", syn_text:"War Cry: +6% Damage per Level", graytext:"", index:[0,""], text:["Damage: ","-","<br>"," percent chance to pulverize"], incomplete:1},
+{data:d262, key:"262", code:312, name:"Whirling Axes", i:31, req:[], reqlvl:30, level:0, extra_levels:0, force_levels:0, effect:1, bindable:0, description:"Passive - Attacks release multiple whirling axes", syn_title:"<br>Whirling Axes Receives Bonuses From:<br>", syn_text:"War Cry: +14% Damage per Level<br>Double Swing: 14% Damage per Level<br>+1% Increased Damage per Dexterity", graytext:"", index:[0,""], text:["Damage: ","-","<br>"," percent chance to release axes on melee hit"], incomplete:1},
 ];

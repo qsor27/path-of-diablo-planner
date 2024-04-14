@@ -60,7 +60,7 @@ var character_barbarian = {class_name:"Barbarian", strength:30, dexterity:20, vi
 		if (skill.name == "Natural Resistance") { result.resistance_skillup = skill.data.values[0][lvl]; }
 		if (skill.name == "Counter Attack") { result.counterattack = skill.data.values[0][lvl]; }
 		if (skill.name == "Puncture") { result.owounds = skill.data.values[0][lvl]; }
-		if (skill.name == "Whirling Axes") { result.pulverize = skill.data.values[2][lvl]; }
+		//if (skill.name == "Whirling Axes") { result.pulverize = skill.data.values[2][lvl]; }
 		// Debuffs:
 		if (skill.name == "Howl") { result.flee_distance = skill.data.values[0][lvl]; result.duration = skill.data.values[1][lvl]; }
 		if (skill.name == "Taunt") { result.enemy_damage = skill.data.values[0][lvl]; result.enemy_attack = skill.data.values[1][lvl]; }	// duration unlisted

@@ -19,7 +19,7 @@ var character_barbarian = {class_name:"Barbarian", strength:30, dexterity:20, vi
 		//if (skill.name == "War Cry" && elem == 2) { 		result = Math.floor((1+result/100)*8) }	// TOCHECK: replace 8 with actual radius (show total radius instead of radius bonus?)
 		if (skill.name == "Battle Command" && elem == 0) { 	result = 1+Math.floor(skill.level/10) }
 		
-		if (skill.name == "Whirling Axes" && elem < 2) { 		result *= (1 + (0.06*skills[8].level + 0.06*skills[28].level + 0.01*(character.dexterity + character.all_attributes + character.level*character.dexterity_per_level)) * (1+character.pDamage/100)) }
+		if (skill.name == "Whirling Axes" && elem < 2) { 		result *= (1 + (0.06*skills[8].level + 0.06*skills[28].level)) }
 		
 		if (skill.name == "Double Swing" && elem == 0) { 	result += (5*skills[24].level) }
 		if (skill.name == "Frenzy" && elem == 0) { 			result = skills[24].level }

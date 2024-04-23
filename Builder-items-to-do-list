@@ -47,6 +47,7 @@ Done    Stormspire chance to cast Ball Lightning on Attack increased from 13% to
 Sets
 
     Trang Oul Guise (helmet) new stat: “+1 to Elemental & Poison Skills”.
+        Need to figure out how to create this
 Done    Trang Oul Full Set bonus “+Meteor” (oskill) increased from +10 to +17 and “+Fire Wall” (oskill) increased from +13 to +15”.
 Done    M’avina’s Caster (bow) gains a new stat: +1 to All Skills.
 Done    Vidala’s Barb (bow) now has +4 Sockets.
@@ -57,7 +58,7 @@ Done    Death’s Touch (gloves) new stat: ‘+Attack Rating Per Level (3 per)�
 
 Runewords
 
-    Insight Runeword can now be created in Bows.
+Done    Insight Runeword can now be created in Bows.
     Rain Runeword gains a new stat: Summon Grizzly Bear cannot be cursed.
     Bone Runeword’s ‘Terror when Struck’ proc replaced by ‘+1 to Bone Armor (Necromancer Only)’.
     Destruction Runeword’s chance to cast Nova level rolls increased from Level 15-22 to Level 21-25.

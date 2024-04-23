@@ -1293,6 +1293,7 @@ oskill_Valkyrie:{index:["oskill_Valkyrie"], format:["+"," to Valkyrie"]},
 oskill_Magic_Arrow:{index:["oskill_Magic_Arrow"], format:["+"," to Magic Arrow"]},
 oskill_Guided_Arrow:{index:["oskill_Guided_Arrow"], format:["+"," to Guided Arrow"]},
 oskill_Multiple_Shot:{index:["oskill_Multiple_Shot"], format:["+"," to Multiple Shot"]},
+oskill_Immolation_Arrow:{index:["oskill_Immolation_Arrow"], format:["+"," to Immolation Arrow"]},
 
 oskill_Battle_Command:{index:["oskill_Battle_Command"], format:["+"," to Battle Command"]},
 oskill_Battle_Orders:{index:["oskill_Battle_Orders"], format:["+"," to Battle Orders"]},

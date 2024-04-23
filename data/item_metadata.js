@@ -964,7 +964,7 @@ bonus_corpse_explosion:{index:["bonus_corpse_explosion"], format:["Corpse Explos
 phys_Lightning_Surge:{index:["phys_Lightning_Surge"], format:["Lightning Surge Deals ","% Extra Damage As Physical"]},
 extraValkyrie:{index:[], format:["Can Summon One Additional Valkyrie"]},
 extraGrizzly:{index:[], format:["Can Summon One Additional Grizzly Bear"]},
-curseGrizzly:{index:[], format:["Summon Grizzly Bear cannot be cursed"]},
+curseGrizzly:{index:[], format:["Summoned Grizzly Bear cannot be cursed"]},
 extraFireGolem:{index:[], format:["Can Summon One Additional Fire Golem"]},
 extraHydra:{index:[], format:["Can Summon One Additional Hydra"]},
 radius_FreezingArrow:{index:["radius_FreezingArrow"], format:["+","% to Freezing Arrow Radius"]},

@@ -1,0 +1,95 @@
+To-do list of item changes to make in planner
+Item Changes listed in patch notes
+Please add notes you go, ------XXX what or where change was made
+
+Runes
+Done    Dol Rune weapon stat ‘25% Chance to Flee’ replaced with ‘Half Freeze Duration’. This will impact Venom, Passion, Silence & White.
+-------Dol changes done to Dol and the ruewords that contain it
+
+Unique
+Done    Dragonscale’s +10 to Hydra increased to +15.
+Done    Todesfaelle Flamme’s ‘-Enemy% Fire’ Resist stat increased from -5% to ‘-15% to -25%’
+Done    Stormspike’s ‘attack speed per 8 dexterity’ stat changed to ‘per 4 dexterity’.
+Done    Stormspike’s ‘lightning damage per 2 Energy’ stat changed to ‘per Energy’.
+------Stormspike changed to ias_per_8_dexterity:2, lDamage_max_per_2_energy:2,
+------Need to figure out how to create new functions that do this the right way
+
+Done    Culwen’s Point’ ‘+Attack Rating’ increased from 60 to 100 and added +3 Sockets.
+------items.js
+
+Done    Boneshade’s ‘+1-2 to Bone Spirit’ & ‘+2-3 to Bone Spear’ remove and added ‘+1-3 to Magic Skills’ instead.
+------items.js
+
+Done    Steelrend gloves received ‘Melee Attacks Deal Splash Damage’ and ‘-100 to Monster Defense per Hit’.
+------items.js
+
+Done    Hellrack’s Immolation skill charges changed to oskill. Immolation Arrow oskill_Immolation_Arrow
+------created Immolation_Arrow oskill in item_metadata
+------added immo to the list of zon oskills basic_variables line 64 and 67
+------added to universal skills line 142
+
+    Steel Carapace gains ‘Physical Absorb +10%”(new stat) and ‘-5% to Enemy Physical Resistances’(new stat).
+        Need to check if comparable properties exist, if so just use; it not create and then apply
+
+Done    Andariel Visage’s chance to cast Poison Nova when struck changed from 15% at level 15 to 5% at level 17.
+------items.js
+
+Done    Stormspire chance to cast Ball Lightning on Attack increased from 13% to 30%.
+------items.js
+
+    Warlord’s Trust stat ‘Repairs 1 Durability In 4 Seconds’ replaced by ‘+30% Attack Speed’. Also added ‘+12 to Whirling Axes’ (oskill) and ‘+60% chance to release Whirling Axes’.
+        Need to check if comparable properties exist, if so just use; it not create and then apply
+
+    New Rainbow facet: ‘+% Physical Skill Damage’ & ‘-% to Enemy Physical Resistances’
+    New Rainbow facet: ‘+% Magical Skill Damage’ & ‘-% to Enemy Magical Resistances’.
+        Need to check if comparable properties exist, if so just use; it not create and then apply
+
+Sets
+
+    Trang Oul Guise (helmet) new stat: “+1 to Elemental & Poison Skills”.
+Done    Trang Oul Full Set bonus “+Meteor” (oskill) increased from +10 to +17 and “+Fire Wall” (oskill) increased from +13 to +15”.
+Done    M’avina’s Caster (bow) gains a new stat: +1 to All Skills.
+Done    Vidala’s Barb (bow) now has +4 Sockets.
+Done    Iratha’s Cord (belt) new stat: ‘+100 Attack Rating’.
+Done    Death’s Touch (gloves) new stat: ‘+Attack Rating Per Level (3 per)’
+    New art for Cow King Set.
+        Just needs screenshots I think
+
+Runewords
+
+    Insight Runeword can now be created in Bows.
+    Rain Runeword gains a new stat: Summon Grizzly Bear cannot be cursed.
+    Bone Runeword’s ‘Terror when Struck’ proc replaced by ‘+1 to Bone Armor (Necromancer Only)’.
+    Destruction Runeword’s chance to cast Nova level rolls increased from Level 15-22 to Level 21-25.
+    Destruction Runeword’s chance to cast Volcano rolls changed from 23% at Lv12 to 18% at Lv18.
+    Plague Runeword chance to cast Poison Nova on hit changed from 25% at level 15 to 15% at level 17.
+    Pattern Runeword’s ‘+10% Bonus to Attack Rating’ stat changed to ‘+3 Seconds to All Martial Arts charge duration. Additionally, created a new version using the same runes as D2R to avoid players accidentally making the wrong one. You can make it whichever way you prefer (TalOrtTir or TalOrtThul).
+    D2R Runewords will be imported to Path of Diablo (with changes) in an effort to both increase item diversity and prevent players from accidentally wasting their runes when making them. * * When the season is over we can decide if each one should leave or stay. Some of them have weak designs behind them because I want more time to rework them. In the meantime, they have been introduced in a weaker state as placeholder.
+        D2R Runeword “Metamorphosis” added to the game with changes: Wearbear & werewolf’s “Mark” buffs removed. Base stats unchanged. Shapeshift Form specific changes: Werewolf gains ‘-(10-15%)% to Enemy Poison Resists affected by Rabies’ & +5 Summon Dire Wolves. Werebear gains Attacks cleave during Maul buff (cleave level based on maul charge count) & Grizzle Bear gains Attacks cleave during Maul buff (cleave level based on maul charge count).
+        D2R Runeword “Mosaic” added to the game with changes: '50% chance for finishing move to not consume charges' & 'refresh stack if charge consumption skipped' mechanics are obsolete in Path of Diablo as charges are not consumed, they only expire due to time and they can be refreshed infinitely. Therefore these stats have been replaced by ‘+3 Seconds to All Martial Arts Charges duration’.
+        D2R Runeword “Mist” added to the game with no changes.
+        D2R Runeword “Bulwark” added to the game with changes: Removed ‘Physical Damage received reduced by 10-15%’ and ‘Increase Maximum Life 5%’. Added ‘+150 to Attack Rating’.
+        D2R Runeword “Cure” added to the game with changes: Removed Cleansing Aura, ‘Poison Resist +40-60%’ and ‘Increase Maximum Life 5%’. Added ‘Reduced Curse Duration by 40%’.
+        D2R Runeword “Temper” added to the game with changes: Removed ‘Fire Resist +10-30%’ (from item, still gets 30% fire resist from Ral) and ‘Increase Maximum Life 5%’. Added ‘+91-130 Fire Damage’ and '+Life on melee/ranged hit' (+4/+3).
+        D2R Runeword “Hearth” added to the game with changes: Removed ‘Cold Resist +10-30%’ (from item, still gets 30% cold resist from Thul) and ‘Increase Maximum Life 5%’. Added ‘+25-40 Cold Damage’ and ‘+2 Additional Cold Arrows Fired’.
+        D2R Runeword “Ground” added to the game with changes: Removed ‘Lightning Resist +10-30%’ (from item, still gets 30% lightning resist from Ort) and ‘Increase Maximum Life 5%’. Added ‘+1-200 Lightning Damage’ and '+Mana on melee/ranged hit' (+3/+2).
+        D2R Runeword “Obsession” NOT imported.
+        D2R Runeword “Flickering Flame” added with nerfs: Removed Aura and reduced ‘+3 to Fire Skills’ to ‘+2 to Fire Skills’.
+        D2R Runeword “Wisdom” added to the game with no changes.
+        D2R Runeword “Unbending Will” added to the game with no changes.
+        D2R Runeword “Hustle” (weapon version) added to the game with changes: Removed ‘Burst of Speed level 1 CTC’ and ‘Fanaticism’ aura. Added ‘20% Chance to Cast Phase Run level 1 When Struck’ and ‘+1 to Dashing Strike’ (oskill).
+        D2R Runeword “Hustle” (armor version) added to the game with changes: ‘+65% Faster Run/Walk’ reduced to +25%.
+
+Corruptions
+
+    Quiver corruption ‘+5-15 Vitality’ changed to ‘+1 to All Skills’.
+    Quivers new ‘Ballist’s’ prefix: ‘+3 to Bow & Crossbow Skills’.
+    Quiver new ‘Experimenter’s’ prefix: ‘+1 to Magic Arrow (oskill).
+    Quiver new stats: Cold, Lightning & Fire Damage prefixes have a new fourth damage tier with higher values (at higher ilvls).
+    Quiver new stats: Cold, Lightning, Fire & Poison Damage suffixes have a new fourth damage tier with higher values (at higher ilvls).
+    Quiver new suffix stat (with two tiers): ‘Damage Taken Goes to Mana’.
+    Quiver new ‘of Abjuration’ suffix: ‘+1 to Elemental & Poison Skills’.
+    Quiver new ‘of Evocation’ suffix: ‘+2 to Elemental & Poison Skills’.
+    Belt corruptions have been changed to: +10% Faster Casting, +10% Faster Attacks, +75% Attack Rating Bonus, Attack Rating Per Level (2 per) and Piercing Attack 8%(Unchanged).
+
+

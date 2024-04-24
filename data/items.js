@@ -1277,7 +1277,7 @@ var unequipped = {			strength:0, dexterity:0, vitality:0, energy:0, life:0, mana
 			{name:"+ All Resistances", base:"quiver", all_res:5},
 			{name:"+ Life per Hit", base:"quiver", life_per_ranged_hit:6},
 			{name:"+ Mana per Hit", base:"quiver", mana_per_ranged_hit:4},
-			{name:"+ Vitality", base:"quiver", vitality:15},
+			{name:"+ All Skills", base:"quiver", all_skills:1},
 		],
 	}
 	

@@ -4227,6 +4227,7 @@ function updateTertiaryStats() {
 	if (c.phys_Lightning_Surge > 0) { statlines += "Lightning Surge Deals "+c.phys_Lightning_Surge+"% Extra Damage As Physical<br>" }
 	if (c.extraValkyrie > 0) { statlines += "Can Summon One Additional Valkyrie<br>" }
 	if (c.extraGrizzly > 0) { statlines += "Can Summon One Additional Grizzly Bear<br>" }
+	if (c.curseGrizzly > 0) { statlines += "Summon Grizzly Bear cannot be cursed<br>" }
 	if (c.extraFireGolem > 0) { statlines += "Can Summon One Additional Fire Golem<br>" }
 	if (c.extraHydra > 0) { statlines += "Can Summon One Additional Hydra<br>" }
 	if (c.radius_FreezingArrow > 0) { statlines += "+"+c.radius_FreezingArrow+"% to Freezing Arrow Radius<br>" }

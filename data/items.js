@@ -83,7 +83,8 @@ var unequipped = {			strength:0, dexterity:0, vitality:0, energy:0, life:0, mana
 	{only:"druid", rarity:"rw", name:"Radiance ­ ­ - ­ ­ Sacred Feathers", req_level:27, skill_Cyclone_Armor:3, skill_Armageddon:3, skill_Hurricane:3, e_def:75, missile_defense:30, vitality:10, energy:10, mana:33, damage_reduced:7, mDamage_reduced:3, damage_to_mana:15, light_radius:5, base:"Sacred Feathers"},
 	{rarity:"rw", name:"Dream ­ ­ - ­ ­ Diadem", req_level:65, ctc:[[10,15,"Confuse","when struck"]], aura:"Holy Shock", aura_lvl:13, e_def:30, defense:220, fhr:30, vitality:10, mana_per_level:0.625, all_res:20, mf:25, max_life:5, base:"Diadem"},
 	{rarity:"rw", name:"Nadir ­ ­ - ­ ­ Bone Helm", req_level:13, e_def:50, defense:10, missile_defense:30, strength:5, mana_per_kill:2, gf:-33, light_radius:-3, base:"Bone Helm", cskill:[[13,"Cloak of Shadows",9]]},
-		// Iron Golem RW replacements
+	{rarity:"rw", name:"Bulwark ­ ­ - ­ ­ Diadem", req_level:35, defense:220, fhr:20, life_leech:6, e_def:100, vitality:10, ar:150, life_replenish:30, damage_reduced:7, base:"Diadem"},
+	// Iron Golem RW replacements
 		{only:"none", rarity:"rw", name:"Lore ­ ­ - ­ ­ Coronet", req_level:27, all_skills:1, energy:10, lRes:30, damage_reduced:7, mana_per_kill:2, light_radius:2, base:"Coronet"},
 		{only:"none", rarity:"rw", name:"Nadir ­ ­ - ­ ­ Circlet", req_level:13, e_def:50, defense:10, missile_defense:30, strength:5, mana_per_kill:2, gf:-33, light_radius:-3, base:"Circlet", cskill:[[13,"Cloak of Shadows",9]]},
 	{name:"Biggin's Bonnet", req_level:3, defense:14, damage_bonus:30, ar:30, mana:15, life:15, base:"Cap", img:"Biggin's_Bonnet"},

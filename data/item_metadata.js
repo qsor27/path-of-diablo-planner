@@ -80,6 +80,18 @@ var runewords = {
 	Steel:["Tir","El"],
 	Pattern:["Tal","Ort","Tir"],
 	Plague:["Cham","Fal","Um"],
+	Bulwark:["Shael","Io","Sol"],
+	Cure:["Shael","Io","Tal"],
+	Flickering_Flame:["Nef","Pul","Vex"],
+	Ground:["Shael","Io","Ort"],
+	Hearth:["Shael","Io","Thul"],
+	Hustle:["Shael","Ko","Eld"],
+	Metamorphosis:["Io","Cham","Fal"],
+	Mist:["Cham","Shael","Gul","Thul","Ith"],
+	Mosaic:["Mal","Gul","Amn"],
+	Temper:["Shael","Io","Ral"],
+	Unbending_Will:["Fal","Io","Ith","Eld","El","Hel"],
+	Wisdom:["Pul","Ith","Eld"],
 };
 
 /* automods = 

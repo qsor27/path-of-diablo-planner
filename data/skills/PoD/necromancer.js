@@ -46,7 +46,7 @@ var character_necromancer = {class_name:"Necromancer", strength:15, dexterity:25
 		if (skill.name == "Poison Nova" && elem < 2) { 					result *= ((1 + (0.13*skills[11].level + 0.13*skills[15].level)) * (1+character.pDamage/100)) }
 		
 		if (skill.name == "Hemorrhage" && elem < 1) { 				result *= (1 + (0.20*skills[23].level + 0.20*skills[24].level + 0.20*skills[27].level)) }
-		if (skill.name == "Hemorrhage" && elem == 3) { 					result = (7.3 + (0.7 * Math.floor(skills[21].level / 5) + (0.7 * Math.floor(skills[21].level)))) }
+		if (skill.name == "Hemorrhage" && elem == 3) { 					result = (7.3 + ((0.7 * Math.floor(skills[21].level / 5) + (0.7 * Math.floor(skills[21].level))))) }
 
 	return result
 	},

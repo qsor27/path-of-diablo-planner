@@ -1071,6 +1071,8 @@ skills_fire_all:{index:["skills_fire_all"], format:["+"," to Fire Skills"]},
 skills_cold_all:{index:["skills_cold_all"], format:["+"," to Cold Skills"]},
 skills_poison_all:{index:["skills_poison_all"], format:["+"," to Poison Skills"]},
 
+skills_ele_poison_all:{index:["skills_ele_poison_all"], format:["+"," to Elemental and Poison Skills"]},
+
 skill_Jab:{index:["skill_Jab"], format:["+"," to Jab (Amazon only)"]},
 skill_Power_Strike:{index:["skill_Power_Strike"], format:["+"," to Power Strike (Amazon only)"]},
 skill_Poison_Javelin:{index:["skill_Poison_Javelin"], format:["+"," to Poison Javelin (Amazon only)"]},

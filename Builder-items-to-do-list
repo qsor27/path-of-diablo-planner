@@ -93,8 +93,10 @@ Done    Quiver corruption ‘+5-15 Vitality’ changed to ‘+1 to All Skills’
     Quiver new stats: Cold, Lightning & Fire Damage prefixes have a new fourth damage tier with higher values (at higher ilvls).
     Quiver new stats: Cold, Lightning, Fire & Poison Damage suffixes have a new fourth damage tier with higher values (at higher ilvls).
     Quiver new suffix stat (with two tiers): ‘Damage Taken Goes to Mana’.
-    Quiver new ‘of Abjuration’ suffix: ‘+1 to Elemental & Poison Skills’.
-    Quiver new ‘of Evocation’ suffix: ‘+2 to Elemental & Poison Skills’.
+ ish   Quiver new ‘of Abjuration’ suffix: ‘+1 to Elemental & Poison Skills’.
+ ish   Quiver new ‘of Evocation’ suffix: ‘+2 to Elemental & Poison Skills’.
+        added skills_ele_poison_all:{index:["skills_ele_poison_all"], format:["+"," to Elemental and Poison Skills"]},
+        in item_metadata
 Done    Belt corruptions have been changed to: +10% Faster Casting, +10% Faster Attacks, +75% Attack Rating Bonus, Attack Rating Per Level (2 per) and Piercing Attack 8%(Unchanged).
 
 

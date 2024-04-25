@@ -163,7 +163,7 @@ var unequipped = {			strength:0, dexterity:0, vitality:0, energy:0, life:0, mana
 	{rarity:"rw", name:"Smoke ­ ­ - ­ ­ Dusk Shroud", req_level:37, fhr:20, e_defense:75, missile_defense:280, energy:10, all_res:50, light_radius:-1, base:"Dusk Shroud", cskill:[[6,"Weaken",18]]},
 	{rarity:"rw", name:"Myth ­ ­ - ­ ­ Mage Plate", req_level:25, ctc:[[3,1,"Howl","when struck"],[10,1,"Taunt","on striking"]], skills_barbarian:2, missile_defense:30, life_replenish:10, thorns:14, req:-15, base:"Mage Plate"},
 	{rarity:"rw", name:"Peace ­ ­ - ­ ­ Mage Plate", req_level:29, skills_amazon:2, oskill_Lethal_Strike:2, fhr:20, cRes:30, thorns:14, extraValkyrie:1, base:"Mage Plate", pod_changes:1},
-	{rarity:"rw", name:"Hustle ­ ­ - ­ ­ Light Plate", req_level:39, frw:25, ias:40, fhr:20, dexterity:10, slower_stam_drain:50, all_res:10, base:"Light Plate"},
+	{rarity:"rw", name:"Hustle ­ ­ - ­ ­ Light Plate", req_level:39, frw:25, ias:40, fhr:20, oskill_Evade:6, dexterity:10, slower_stam_drain:50, all_res:10, base:"Light Plate"},
 	
 	// Iron Golem RW replacements
 		{only:"none", rarity:"rw", name:"Rain ­ ­ - ­ ­ Archon Plate", req_level:63, ctc:[[5,15,"Cyclone Armor","when struck"]], skills_druid:2, mana:150, lRes:30, mDamage_reduced:7, damage_to_mana:15, extraGrizzly:1, base:"Archon Plate", pod_changes:1},

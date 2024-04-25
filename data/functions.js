@@ -2174,8 +2174,9 @@ function getCTCSkillData(name, lvl, group) {
 			result.fDamage_max = skill.data.values[1][lvl] * (1 + (0.08*skills[23].level)) * (1 + Math.min(1,(skills[30].level+skills[30].force_levels))*(~~skills[30].data.values[1][skills[30].level+skills[30].extra_levels])/100);
 		}
 	else if (name == "Discharge") {
-		result.lDamage_min = skill.data.values[1][lvl] + (0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)); 
-		result.lDamage_max = skill.data.values[2][lvl] + (0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2));
+		result.fDamage_min = skill.data.values[0][lvl]; result.fDamage_max = skill.data.values[1][lvl]; result.ar_bonus = skill.data.values[4][lvl];
+		//result.lDamage_min = skill.data.values[1][lvl] //+ (0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)); 
+		//result.lDamage_max = skill.data.values[2][lvl] //+ (0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2));
 //		result.lDamage =	(0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2) * (1+c.lDamage/100))
 		if (character.class_name == "Sorceress") {
 			result.lDamage_min = (1 + 0.03*sk[12].level + 0.03*sk[14].level);

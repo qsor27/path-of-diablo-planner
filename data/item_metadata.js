@@ -1297,6 +1297,7 @@ oskill_Warp:{index:["oskill_Warp"], format:["+"," to Warp"]},
 oskill_Ball_Lightning:{index:["oskill_Ball_Lightning"], format:["+"," to Ball Lightning"]},
 
 oskill_Inner_Sight:{index:["oskill_Inner_Sight"], format:["+"," to Inner Sight"]},
+oskill_Evade:{index:["oskill_Evade"], format:["+"," to Evade"]},
 oskill_Lethal_Strike:{index:["oskill_Lethal_Strike"], format:["+"," to Lethal Strike"]},
 oskill_Valkyrie:{index:["oskill_Valkyrie"], format:["+"," to Valkyrie"]},
 oskill_Magic_Arrow:{index:["oskill_Magic_Arrow"], format:["+"," to Magic Arrow"]},

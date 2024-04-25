@@ -27,7 +27,7 @@ var unequipped = {			strength:0, dexterity:0, vitality:0, energy:0, life:0, mana
 	/* oskills  barbarian	*/	oskill_Battle_Command:0, oskill_Battle_Orders:0, oskill_Battle_Cry:0, oskill_Bash:0, oskill_Edged_Weapon_Mastery:0, oskill_Whirlwind:0, 							// Call to Arms, Passion, The Grandfather, Chaos
 	/* oskills  druid		*/	oskill_Lycanthropy:0, oskill_Werebear:0, oskill_Werewolf:0, oskill_Feral_Rage:0, oskill_Flame_Dash:0, oskill_Summon_Dire_Wolf:0, 									// Frostwind, Wolfhowl, Beast, Flamebellow, Boneflesh
 	/* oskills  necromancer	*/	oskill_Desecrate:0, 																																				// Radament's Sphere
-	/* oskills  paladin		*/	oskill_Zeal:0, oskill_Vengeance:0, 																																	// Passion, Kingslayer
+	/* oskills  paladin		*/	oskill_Zeal:0, oskill_Vengeance:0, oskill_Dashing_Strike:0,																																// Passion, Kingslayer
 	/* oskills  sorceress	*/	oskill_Frigerate:0, oskill_Shiver_Armor:0, oskill_Cold_Mastery:0, oskill_Hydra:0, oskill_Fire_Ball:0, oskill_Fire_Wall:0, oskill_Meteor:0, oskill_Fire_Mastery:0, 	// Frostwind, Medusa's Gaze, Bing Sz Wang, Dragonscale, Trang-Oul's Set
 								oskill_Berserk:0, oskill_Teleport:0, oskill_Heart_of_Wolverine:0, 
 	

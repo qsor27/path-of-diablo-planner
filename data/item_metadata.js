@@ -86,12 +86,6 @@ var runewords = {
 	Ground:["Shael","Io","Ort"],
 	Hearth:["Shael","Io","Thul"],
 	Hustle:["Shael","Ko","Eld"],
-	Metamorphosis:["Io","Cham","Fal"],
-	Mist:["Cham","Shael","Gul","Thul","Ith"],
-	Mosaic:["Mal","Gul","Amn"],
-	Temper:["Shael","Io","Ral"],
-	Unbending_Will:["Fal","Io","Ith","Eld","El","Hel"],
-	Wisdom:["Pul","Ith","Eld"],
 };
 
 /* automods = 
@@ -880,6 +874,7 @@ enemy_fRes:{index:["enemy_fRes"], format:["","% to Enemy Fire Resistance"]},
 enemy_cRes:{index:["enemy_cRes"], format:["","% to Enemy Cold Resistance"]},
 enemy_lRes:{index:["enemy_lRes"], format:["","% to Enemy Lightning Resistance"]},
 enemy_pRes:{index:["enemy_pRes"], format:["","% to Enemy Poison Resistance"]},
+enemy_mRes:{index:["enemy_mRes"], format:["","% to Enemy Magic Resistance"]},
 enemy_defense:{index:["enemy_defense"], format:["Enemy Defense ","%"]},
 enemy_defense_flat:{index:["enemy_defense_flat"], format:["Enemy Defense ",""]},
 target_defense:{index:["target_defense"], format:["Target Defense ","%"]},
@@ -1012,7 +1007,9 @@ radius:{index:["radius"], format:["Radius: "," yards"]},
 amountSummoned:1,
 enemy_damage:1,
 enemy_attack:1,
-enemy_physRes:1,
+//enemy_physRes:1,
+enemy_physRes:{index:["enemy_physRes"], format:["","% to Enemy Physical Resistance"]},
+physicalDamage:{index:["physicalDamage"], format:["+","% Increased Physical Damage"]},
 enemy_allRes:1,
 fleeing:1,
 flee_distance:1,
@@ -1070,6 +1067,8 @@ skills_sorceress:{index:["skills_sorceress"], format:["+"," to Sorceress Skill L
 skills_fire_all:{index:["skills_fire_all"], format:["+"," to Fire Skills"]},
 skills_cold_all:{index:["skills_cold_all"], format:["+"," to Cold Skills"]},
 skills_poison_all:{index:["skills_poison_all"], format:["+"," to Poison Skills"]},
+
+skills_ele_poison_all:{index:["skills_ele_poison_all"], format:["+"," to Elemental and Poison Skills"]},
 
 skill_Jab:{index:["skill_Jab"], format:["+"," to Jab (Amazon only)"]},
 skill_Power_Strike:{index:["skill_Power_Strike"], format:["+"," to Power Strike (Amazon only)"]},
@@ -1301,6 +1300,7 @@ oskill_Warp:{index:["oskill_Warp"], format:["+"," to Warp"]},
 oskill_Ball_Lightning:{index:["oskill_Ball_Lightning"], format:["+"," to Ball Lightning"]},
 
 oskill_Inner_Sight:{index:["oskill_Inner_Sight"], format:["+"," to Inner Sight"]},
+oskill_Evade:{index:["oskill_Evade"], format:["+"," to Evade"]},
 oskill_Lethal_Strike:{index:["oskill_Lethal_Strike"], format:["+"," to Lethal Strike"]},
 oskill_Valkyrie:{index:["oskill_Valkyrie"], format:["+"," to Valkyrie"]},
 oskill_Magic_Arrow:{index:["oskill_Magic_Arrow"], format:["+"," to Magic Arrow"]},
@@ -1325,6 +1325,7 @@ oskill_Desecrate:{index:["oskill_Desecrate"], format:["+"," to Desecrate"]},
 
 oskill_Zeal:{index:["oskill_Zeal"], format:["+"," to Zeal"]},
 oskill_Vengeance:{index:["oskill_Vengeance"], format:["+"," to Vengeance"]},
+oskill_Dashing_Strike:{index:["oskill_Dashing_Strike"], format:["+"," to Dashing Strike"]},
 
 oskill_Frigerate:{index:["oskill_Frigerate"], format:["+"," to Frigerate"]},
 oskill_Shiver_Armor:{index:["oskill_Shiver_Armor"], format:["+"," to Shiver Armor"]},
@@ -1339,6 +1340,8 @@ skills_class:{index:["skills_class"], format:["+"," to Class Skills"]},		// unne
 skills_tree1:{index:["skills_tree1"], format:["+"," to Tree #1 Skills"]},	// unused
 skills_tree2:{index:["skills_tree2"], format:["+"," to Tree #2 Skills"]},	// unused
 skills_tree3:{index:["skills_tree3"], format:["+"," to Tree #3 Skills"]},	// unused
+
+proc_Dangoon_Discharge:{index:["proc_Dangoon_Discharge"], format:["Discharge proc is +"]},
 
 stamina_skillup:{index:["stamina_skillup"], format:["+","% Stamina"]},
 frw_skillup:{index:["frw_skillup"], format:["+","% Faster Run/Walk"]},

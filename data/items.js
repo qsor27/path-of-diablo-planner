@@ -163,8 +163,9 @@ var unequipped = {			strength:0, dexterity:0, vitality:0, energy:0, life:0, mana
 	{rarity:"rw", name:"Smoke ­ ­ - ­ ­ Dusk Shroud", req_level:37, fhr:20, e_defense:75, missile_defense:280, energy:10, all_res:50, light_radius:-1, base:"Dusk Shroud", cskill:[[6,"Weaken",18]]},
 	{rarity:"rw", name:"Myth ­ ­ - ­ ­ Mage Plate", req_level:25, ctc:[[3,1,"Howl","when struck"],[10,1,"Taunt","on striking"]], skills_barbarian:2, missile_defense:30, life_replenish:10, thorns:14, req:-15, base:"Mage Plate"},
 	{rarity:"rw", name:"Peace ­ ­ - ­ ­ Mage Plate", req_level:29, skills_amazon:2, oskill_Lethal_Strike:2, fhr:20, cRes:30, thorns:14, extraValkyrie:1, base:"Mage Plate", pod_changes:1},
-	{rarity:"rw", name:"Stealth ­ ­ - ­ ­ Light Plate", req_level:17, frw:25, fcr:25, fhr:25, dexterity:6, mana_regen:15, stamina:15, pRes:30, mDamage_reduced:3, base:"Light Plate"},
-		// Iron Golem RW replacements
+	{rarity:"rw", name:"Hustle ­ ­ - ­ ­ Light Plate", req_level:39, frw:25, ias:40, fhr:20, dexterity:10, slower_stam_drain:50, all_res:10, base:"Light Plate"},
+	
+	// Iron Golem RW replacements
 		{only:"none", rarity:"rw", name:"Rain ­ ­ - ­ ­ Archon Plate", req_level:63, ctc:[[5,15,"Cyclone Armor","when struck"]], skills_druid:2, mana:150, lRes:30, mDamage_reduced:7, damage_to_mana:15, extraGrizzly:1, base:"Archon Plate", pod_changes:1},
 		{only:"none", rarity:"rw", name:"Principle ­ ­ - ­ ­ Archon Plate", req_level:55, ctc:[[100,5,"Holy Bolt","on striking"]], skills_paladin:2, damage_vs_undead:50, life:150, slower_stam_drain:15, pRes_max:5, fRes:30, base:"Archon Plate"},
 		{only:"none", rarity:"rw", name:"Prudence ­ ­ - ­ ­ Archon Plate", req_level:49, fhr:25, e_def:170, all_res:35, damage_reduced:3, mDamage_reduced:17, mana_per_kill:2, light_radius:1, autorepair:1, base:"Archon Plate"},

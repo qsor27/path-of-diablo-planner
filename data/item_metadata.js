@@ -85,6 +85,7 @@ var runewords = {
 	Flickering_Flame:["Nef","Pul","Vex"],
 	Ground:["Shael","Io","Ort"],
 	Hearth:["Shael","Io","Thul"],
+	Hustle:["Shael","Ko","Eld"],
 };
 
 /* automods = 

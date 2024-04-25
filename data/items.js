@@ -86,6 +86,8 @@ var unequipped = {			strength:0, dexterity:0, vitality:0, energy:0, life:0, mana
 	{rarity:"rw", name:"Bulwark ­ ­ - ­ ­ Diadem", req_level:35, fhr:20, life_leech:6, e_def:100, vitality:10, ar:150, life_replenish:30, damage_reduced:7, base:"Diadem"},
 	{rarity:"rw", name:"Cure ­ ­ - ­ ­ Diadem", req_level:35, curse_length_reduced:40, e_def:100, pRes:30, poison_length_reduced:50, fhr:20, vitality:10, base:"Diadem"},
 	{rarity:"rw", name:"Flickering Flame ­ ­ - ­ ­ Diadem", req_level:55, skills_fire:2, enemy_fRes:-15, e_def:30, missile_defense:30, mana:75, half_freeze:1, fRes_max:5, poison_length_reduced:50, base:"Diadem"},
+	{rarity:"rw", name:"Ground ­ ­ - ­ ­ Diadem", fhr:20, e_def:100, vitality:10, lDamage_min:200, lRes:30, lAbsorb:15, mana_per_hit:3, mana_per_ranged_hit:2, base:"Diadem"},
+	{rarity:"rw", name:"Hearth ­ ­ - ­ ­ Diadem", fhr:20, e_def:100, vitality:10, cDamage_min:40, cRes:30, cAbsorb:15, cbf:1, extra_arrows_Cold_Arrow:2, base:"Diadem"},
 	// Iron Golem RW replacements
 		{only:"none", rarity:"rw", name:"Lore ­ ­ - ­ ­ Coronet", req_level:27, all_skills:1, energy:10, lRes:30, damage_reduced:7, mana_per_kill:2, light_radius:2, base:"Coronet"},
 		{only:"none", rarity:"rw", name:"Nadir ­ ­ - ­ ­ Circlet", req_level:13, e_def:50, defense:10, missile_defense:30, strength:5, mana_per_kill:2, gf:-33, light_radius:-3, base:"Circlet", cskill:[[13,"Cloak of Shadows",9]]},

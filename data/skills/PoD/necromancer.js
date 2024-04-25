@@ -136,8 +136,8 @@ var character_necromancer = {class_name:"Necromancer", strength:15, dexterity:25
 		else if (skill.name == "Iron Golem") {			attack = 0; spell = 1; damage_min = character.getSkillData(skill,lvl,0); damage_max = character.getSkillData(skill,lvl,1); }
 		else if (skill.name == "Fire Golem") {			attack = 0; spell = 1; damage_min = character.getSkillData(skill,lvl,0); damage_max = character.getSkillData(skill,lvl,1); }
 	//	else if (skill.name == "Revive") {				attack = 0; spell = 2; }
-		//else if (skill.name == "Teeth") {				attack = 0; spell = 1; mDamage_min = character.getSkillData(skill,lvl,1); mDamage_max = character.getSkillData(skill,lvl,2); }
-		else if (skill.name == "Teeth") {				attack = 0; spell = 1; mDamage_min = character.getSkillData(skill,lvl,1) + (character.getSkillData(skill,lvl,1) * (mDamage/100)); mDamage_max = character.getSkillData(skill,lvl,2); }
+		else if (skill.name == "Teeth") {				attack = 0; spell = 1; mDamage_min = character.getSkillData(skill,lvl,1); mDamage_max = character.getSkillData(skill,lvl,2); }
+		//else if (skill.name == "Teeth") {				attack = 0; spell = 1; mDamage_min = character.getSkillData(skill,lvl,1) + (character.getSkillData(skill,lvl,1) * (mDamage/100)); mDamage_max = character.getSkillData(skill,lvl,2); }
 		else if (skill.name == "Desecrate") {			attack = 0; spell = 1; pDamage_min = character.getSkillData(skill,lvl,1); pDamage_max = character.getSkillData(skill,lvl,2); pDamage_duration = 2; }
 		else if (skill.name == "Bone Spear") {			attack = 0; spell = 1; mDamage_min = character.getSkillData(skill,lvl,0); mDamage_max = character.getSkillData(skill,lvl,1); }
 		else if (skill.name == "Bone Spirit") {			attack = 0; spell = 1; mDamage_min = character.getSkillData(skill,lvl,0); mDamage_max = character.getSkillData(skill,lvl,1); }

@@ -76,7 +76,7 @@ var oskills_info = {
 
 var procs = ["proc_Dangoon_Discharge"]
 var procs_info = {
-	proc_Dangoon_Discharge:{name:"Discharge",native_class:"sorc",i:18},
+	proc_Dangoon_Discharge:{name:"Discharge",native_class:"sorceress",i:18},
 };
 
 var effect_cskills = {Inner_Sight:{native_class:"amazon",i:10}, Phase_Run:{native_class:"amazon",i:12}, Cloak_of_Shadows:{native_class:"assassin",i:14}, Venom:{native_class:"assassin",i:18}, Cyclone_Armor:{native_class:"druid",i:5}, Heart_of_Wolverine:{native_class:"druid",i:23}, Oak_Sage:{native_class:"druid",i:26}, Spirit_of_Barbs:{native_class:"druid",i:29}, Blood_Golem:{native_class:"necromancer",i:6}, Iron_Golem:{native_class:"necromancer",i:8}, Deadly_Poison:{native_class:"necromancer",i:11}, Enflame:{native_class:"sorceress",i:28}};

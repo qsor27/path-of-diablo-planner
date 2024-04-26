@@ -53,7 +53,7 @@ var unequipped = {			strength:0, dexterity:0, vitality:0, energy:0, life:0, mana
 	{only:"druid", name:"Spirit Keeper", req_level:67, skills_druid:2, e_def:190, fhr:20, pRes_max:10, fRes:40, lAbsorb_flat:14, cAbsorb:25, base:"Earth Spirit"},
 	{only:"druid", name:"Ravenlore", req_level:74, skills_elemental:3, skill_Raven:7, e_def:150, energy:30, enemy_fRes:-20, all_res:25, base:"Sky Spirit", img:"Ravenlore"},
 	{only:"druid", set_Ald:1, name:"Aldur's Stony Gaze", req_level:36, defense:90, fhr:25, mana_regen:17, cRes:50, light_radius:5, sockets:2, base:"Hunter's Guise", rarity:"set", set_bonuses:["set_Ald",{},{energy:15},{energy:15},{energy:15}], img:"Aldur's_Stony_Gaze"},
-	{only:"druid", rarity:"rw", name:"Metamorphosis ­ ­ - ­ ­ Griffon Headdress", req_level:67, metamorphosis_wolf:1, skill_Summon_Dire_Wolf:5, metamorphosis_bear:1, metamorphosis_bear1:1, metamorphosis_bear2:1, skills_shapeshifting:5, cblow:25, defense_bonus:80, strength:10, vitality:10, all_res:10, cbf:1, base:"Griffon Headdress"},
+	{only:"druid", rarity:"rw", name:"Metamorphosis ­ ­ - ­ ­ Griffon Headdress", req_level:67, metamorphosis_wolf:1, metamorphosis_wolf1:1, skill_Summon_Dire_Wolf:5, metamorphosis_bear:1, metamorphosis_bear1:1, metamorphosis_bear2:1, skills_shapeshifting:5, cblow:25, defense_bonus:80, strength:10, vitality:10, all_res:10, cbf:1, base:"Griffon Headdress"},
 	{only:"amazon", rarity:"magic", name:"Athlete's Diadem of Speed", req_level:64, frw:30, skills_passives:3, base:"Diadem"},
 	{only:"assassin", rarity:"magic", name:"Kenshi's Diadem of Speed", req_level:64, frw:30, skills_martial:3, base:"Diadem"},
 	{only:"assassin", rarity:"magic", name:"Shadow Diadem of Speed", req_level:64, frw:30, skills_shadow:3, base:"Diadem"},

@@ -40,7 +40,8 @@ var character_any = {
 	// Universal
 		if (skillName == "Ball Lightning" && elem < 2) {			result *= ((1 + 0.01*Math.floor((character.energy + character.all_attributes)*(1+character.max_energy/100)/3)) * (1+character.lDamage/100)) }
 		if (skillName == "Dangoon Discharge Proc" && elem < 2) {	result *= ((1 + 0.01*Math.floor((character.energy + character.all_attributes)*(1+character.max_energy/100)/2)) * (1+character.lDamage/100)) }
-	// Barbarian
+		if (skillName == "Dangoon Chain Proc") 			{			result *= lDamage_min = character.getSkillData(skill,lvl,1); lDamage_max = character.getSkillData(skill,lvl,2); }
+		// Barbarian
 		if (skillName == "Battle Command" && elem == 0) {			result = 1 }
 	// Druid
 		if (skillName == "Flame Dash" && elem == 0) {				result = 8 }

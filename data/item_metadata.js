@@ -1305,7 +1305,7 @@ skill_Hydra:{index:["skill_Hydra"], format:["+"," to Hydra (Sorceress only)"]},
 oskill_Warp:{index:["oskill_Warp"], format:["+"," to Warp"]},
 oskill_Ball_Lightning:{index:["oskill_Ball_Lightning"], format:["+"," to Ball Lightning"]},
 oskill_Dangoon_Discharge_Proc:{index:["oskill_Dangoon_Discharge_Proc"], format:["+"," Dangoon Discharge Proc"]},
-//oskill_Dangoon_Chain_Proc:{index:["oskill_Dangoon_Chain_Proc"], format:["+"," Dangoon Chain Proc"]},
+oskill_DangoonChain_Proc:{index:["oskill_DangoonChain_Proc"], format:["+"," Dangoon Chain Proc"]},
 
 oskill_Inner_Sight:{index:["oskill_Inner_Sight"], format:["+"," to Inner Sight"]},
 oskill_Evade:{index:["oskill_Evade"], format:["+"," to Evade"]},

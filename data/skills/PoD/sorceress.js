@@ -53,7 +53,7 @@ var character_sorceress = {class_name:"Sorceress", strength:10, dexterity:25, vi
 		if (skill.name == "Meteor" && elem < 6 && elem > 3) { 			result *= ((1 + (0.03*sk[24].level)) * (1+c.fDamage/100)) }
 		if (skill.name == "Hydra" && elem < 3 && elem > 0) { 			result *= ((1 + (0.01*sk[23].level + 0.02*sk[26].level)) * (1+c.fDamage/100)) }
 
-		if (skillName == "Dangoon Discharge Proc" && elem < 2) { 		result *= ((1 + 0.03*sk[12].level + 0.03*sk[14].level))} // + 0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)) * (1+c.lDamage/100)) }
+//		if (skillName == "Dangoon Discharge Proc" && elem < 2) { 		result *= ((1 + 0.03*sk[12].level + 0.03*sk[14].level))} // + 0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)) * (1+c.lDamage/100)) }
 
 	return result
 	},

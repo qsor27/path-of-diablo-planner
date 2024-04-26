@@ -27,10 +27,10 @@ var character_any = {
 			["lightning max",240,281,322,363,404,445,486,527,568,609,650,691,732,773,814,855,896,937,978,1019,1060,1101,1142,1183,1224,1265,1306,1347,1388,1429,1470,1511,1552,1593,1634,1675,1716,1757,1798,1839,1880,1921,1962,2003,2044,2085,2126,2167,2208,2249,2290,2331,2372,2413,2454,2495,2536,2577,2618,2659]]}};
 		if (skillName == "Dangoon Discharge Proc") { skill = sk_Dangoon_Discharge_Proc }
 
-		var sk_Dangoon_Chain_Proc = {data:{values:[
-			["lightning min",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1], 
-			["lightning max",160,200,240,280,320,360,400,440,488,536,584,632,680,728,776,824,880,936,992,1048,1104,1160,1224,1288,1352,1416,1480,1544,1616,1688,1760,1832,1904,1976,2048,2120,2192,2264,2336,2408,2480,2552,2624,2696,2768,2840,2912,2984,3056,3128,3200,3272,3344,3416,3488,3560,3632,3704,3776,3848]]}};
-		if (skillName == "Dangoon Chain Proc") { skill = sk_Dangoon_Chain_Proc }
+//		var sk_Dangoon_Chain_Proc = {data:{values:[
+//			["lightning min",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1], 
+//			["lightning max",160,200,240,280,320,360,400,440,488,536,584,632,680,728,776,824,880,936,992,1048,1104,1160,1224,1288,1352,1416,1480,1544,1616,1688,1760,1832,1904,1976,2048,2120,2192,2264,2336,2408,2480,2552,2624,2696,2768,2840,2912,2984,3056,3128,3200,3272,3344,3416,3488,3560,3632,3704,3776,3848]]}};
+//		if (skillName == "Dangoon Chain Proc") { skill = sk_Dangoon_Chain_Proc }
 
 		var result = skill.data.values[elem][lvl];
 		var lycan_lvl = ~~character["oskill_Lycanthropy"] + character.all_skills + Math.ceil(character.all_skills_per_level*character.level);
@@ -40,7 +40,7 @@ var character_any = {
 	// Universal
 		if (skillName == "Ball Lightning" && elem < 2) {			result *= ((1 + 0.01*Math.floor((character.energy + character.all_attributes)*(1+character.max_energy/100)/3)) * (1+character.lDamage/100)) }
 		if (skillName == "Dangoon Discharge Proc" && elem < 2) {	result *= ((1 + 0.01*Math.floor((character.energy + character.all_attributes)*(1+character.max_energy/100)/2)) * (1+character.lDamage/100)) }
-		if (skillName == "Dangoon Chain Proc"  && elem == 2) {		result = lDamage_max = character.getSkillData(skill,lvl,2); }
+//		if (skillName == "Dangoon Chain Proc"  && elem == 2) {		result = lDamage_max = character.getSkillData(skill,lvl,2); }
 	// Barbarian
 		if (skillName == "Battle Command" && elem == 0) {			result = 1 }
 	// Druid
@@ -76,8 +76,8 @@ var character_any = {
 		if (skillName == "Meteor" && elem < 6 && elem > 3) { 		result *= (1+character.fDamage/100) }
 		if (skillName == "Hydra" && elem < 3 && elem > 0) { 		result *= (1+character.fDamage/100) }
 //		if (skillName == "Dangoon Discharge Proc" && elem < 2) { 	result *= ((1 + 0.03*skills_all["sorceress"][12].level + 0.03*skills_all["sorceress"][14].level))} // + 0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)) * (1+c.lDamage/100)) }
-		if (skillName == "Dangoon Discharge Proc" && elem == 0) { 	result = ((1 + 0.03*skills_all["sorceress"][12].level + 0.03*skills_all["sorceress"][14].level))} // + 0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)) * (1+c.lDamage/100)) }
-		if (skillName == "Dangoon Discharge Proc" && elem == 1) { 	result = ((1 + 0.03*skills_all["sorceress"][12].level + 0.03*skills_all["sorceress"][14].level))} // + 0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)) * (1+c.lDamage/100)) }
+//		if (skillName == "Dangoon Discharge Proc" && elem == 0) { 	result = ((1 + 0.03*skills_all["sorceress"][12].level + 0.03*skills_all["sorceress"][14].level))} // + 0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)) * (1+c.lDamage/100)) }
+//		if (skillName == "Dangoon Discharge Proc" && elem == 1) { 	result = ((1 + 0.03*skills_all["sorceress"][12].level + 0.03*skills_all["sorceress"][14].level))} // + 0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)) * (1+c.lDamage/100)) }
 
 //		if (skillName == "Dangoon Chain Proc" && elem == 0) { 	result = ((1 + 0.03*skills_all["sorceress"][11].level + 0.03*skills_all["sorceress"][15].level))} // + 0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)) * (1+c.lDamage/100)) }
 		if (skillName == "Dangoon Chain Proc" && elem == 1) { 	result = ((1 + 0.03*skills_all["sorceress"][11].level + 0.03*skills_all["sorceress"][15].level))} // + 0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)) * (1+c.lDamage/100)) }
@@ -157,7 +157,7 @@ var character_any = {
 		
 		if (skillName == "Ball Lightning") {		attack = 0; spell = 1; lDamage_min = character_any.getSkillData(skillName,lvl,0); lDamage_max = character_any.getSkillData(skillName,lvl,1); }
 		else if (skillName == "Dangoon Discharge Proc") {		attack = 0; spell = 1; lDamage_min = character_any.getSkillData(skillName,lvl,0); lDamage_max = character_any.getSkillData(skillName,lvl,1); }
-		else if (skillName == "Dangoon Chain Proc") {		attack = 0; spell = 1; lDamage_min = character_any.getSkillData(skillName,lvl,0); lDamage_max = character_any.getSkillData(skillName,lvl,1); }
+//		else if (skillName == "Dangoon Chain Proc") {		attack = 0; spell = 1; lDamage_min = character_any.getSkillData(skillName,lvl,0); lDamage_max = character_any.getSkillData(skillName,lvl,1); }
 		
 		// else if (skillName == "Valkyrie") {		attack = 0; spell = 1; }
 		else if (skillName == "Magic Arrow") {		attack = 1; spell = 0; mDamage_min = character_any.getSkillData(skillName,lvl,1); mDamage_max = character_any.getSkillData(skillName,lvl,2); }

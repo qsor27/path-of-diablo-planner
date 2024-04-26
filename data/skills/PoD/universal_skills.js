@@ -40,8 +40,8 @@ var character_any = {
 	// Universal
 		if (skillName == "Ball Lightning" && elem < 2) {			result *= ((1 + 0.01*Math.floor((character.energy + character.all_attributes)*(1+character.max_energy/100)/3)) * (1+character.lDamage/100)) }
 		if (skillName == "Dangoon Discharge Proc" && elem < 2) {	result *= ((1 + 0.01*Math.floor((character.energy + character.all_attributes)*(1+character.max_energy/100)/2)) * (1+character.lDamage/100)) }
-		if (skillName == "Dangoon Chain Proc") 			{			result *= lDamage_min = character.getSkillData(skill,lvl,1); lDamage_max = character.getSkillData(skill,lvl,2); }
-		// Barbarian
+		if (skillName == "Dangoon Chain Proc"  && elem == 2) {		result *= lDamage_min = character.getSkillData(skill,lvl,1); lDamage_max = character.getSkillData(skill,lvl,2); }
+	// Barbarian
 		if (skillName == "Battle Command" && elem == 0) {			result = 1 }
 	// Druid
 		if (skillName == "Flame Dash" && elem == 0) {				result = 8 }
@@ -79,7 +79,7 @@ var character_any = {
 		if (skillName == "Dangoon Discharge Proc" && elem == 0) { 	result = ((1 + 0.03*skills_all["sorceress"][12].level + 0.03*skills_all["sorceress"][14].level))} // + 0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)) * (1+c.lDamage/100)) }
 		if (skillName == "Dangoon Discharge Proc" && elem == 1) { 	result = ((1 + 0.03*skills_all["sorceress"][12].level + 0.03*skills_all["sorceress"][14].level))} // + 0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)) * (1+c.lDamage/100)) }
 
-		if (skillName == "Dangoon Chain Proc" && elem == 0) { 	result = ((1 + 0.03*skills_all["sorceress"][11].level + 0.03*skills_all["sorceress"][15].level))} // + 0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)) * (1+c.lDamage/100)) }
+//		if (skillName == "Dangoon Chain Proc" && elem == 0) { 	result = ((1 + 0.03*skills_all["sorceress"][11].level + 0.03*skills_all["sorceress"][15].level))} // + 0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)) * (1+c.lDamage/100)) }
 		if (skillName == "Dangoon Chain Proc" && elem == 1) { 	result = ((1 + 0.03*skills_all["sorceress"][11].level + 0.03*skills_all["sorceress"][15].level))} // + 0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)) * (1+c.lDamage/100)) }
 
 //		if (skillName == "Discharge") {		attack = 0; spell = 1; lDamage_min = character.getSkillData(skill,lvl,1); lDamage_max = character.getSkillData(skill,lvl,2); }

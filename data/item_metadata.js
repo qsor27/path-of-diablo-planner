@@ -86,7 +86,7 @@ var runewords = {
 	Ground:["Shael","Io","Ort"],
 	Hearth:["Shael","Io","Thul"],
 	Hustle:["Shael","Ko","Eld"],
-	Metamorphosis:["Io","Cham","Fal"]
+	Metamorphosis:["Io","Cham","Fal"],
 };
 
 /* automods = 

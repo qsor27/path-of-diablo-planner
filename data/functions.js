@@ -4220,7 +4220,7 @@ function updateTertiaryStats() {
 	if (c.flee_on_hit > 0) { document.getElementById("flee_on_hit").innerHTML = "Hit Causes Monster to Flee " + Math.min(100,c.flee_on_hit) + "%<br>" } else { document.getElementById("flee_on_hit").innerHTML = "" }
 	if (c.discount > 0) { document.getElementById("discount").innerHTML = "Vendor Prices Reduced by " + c.discount + "%<br>" } else { document.getElementById("discount").innerHTML = "" }
 	
-	if (c.fDamage_min > 0) { document.getElementById("fDamage_min").innerHTML = "+"+c.fDamage_min+" Fire Damage<br>" } else { document.getElementById("fDamage_min").innerHTML = "" }
+	//if (c.fDamage_min > 0) { document.getElementById("fDamage_min").innerHTML = "+"+c.fDamage_min+" Fire Damage<br>" } else { document.getElementById("fDamage_min").innerHTML = "" }
 	if (c.itd > 0) { document.getElementById("itd").innerHTML = "Ignore Target Defense<br>" } else { document.getElementById("itd").innerHTML = "" }
 	if (c.pmh > 0) { document.getElementById("pmh").innerHTML = "Prevent Monster Heal<br>" } else { document.getElementById("pmh").innerHTML = "" }
 	if (c.cbf > 0) { document.getElementById("cbf").innerHTML = "Cannot Be Frozen<br>" }

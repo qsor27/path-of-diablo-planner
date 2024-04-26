@@ -896,7 +896,7 @@ metamorphosis_wolf:{Index:[],format:["Werewolf Form specific changes:"]},
 metamorphosis_wolf1:{Index:[],format:["-(10-15%)% to Enemy Poison Resists affected by Rabies"]}, //format:[[skill_Summon_Dire_Wolf:5]],
 metamorphosis_bear:{Index:[],format:["Werebear Form specific changes:"]},
 metamorphosis_bear1:{Index:[],format:["Gain Attacks cleave during Maul buff (cleave level based on Maul charge count)"]},
-metamorphosis_bear1:{Index:[],format:["Grizzly Bear gains Attacks cleave during Maul buff (cleave level based on Maul charge count)"]},
+metamorphosis_bear2:{Index:[],format:["Grizzly Bear gains Attacks cleave during Maul buff (cleave level based on Maul charge count)"]},
 glow:1,
 fade:1,
 

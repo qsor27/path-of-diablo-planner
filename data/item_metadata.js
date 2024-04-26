@@ -86,6 +86,7 @@ var runewords = {
 	Ground:["Shael","Io","Ort"],
 	Hearth:["Shael","Io","Thul"],
 	Hustle:["Shael","Ko","Eld"],
+	Metamorphosis:["Io","Cham","Fal"],
 };
 
 /* automods = 
@@ -892,6 +893,11 @@ peace:{index:[], format:["Slain Enemies rest in Peace"]},
 knockback:{index:[], format:["Knockback"]},
 half_freeze:{index:[], format:["Half Freeze Duration"]},
 melee_splash:{index:[], format:["Melee Attacks deal Splash Damage"]},
+metamorphosis_wolf:{index:[], format:["Werewolf Form specific changes:"]},
+metamorphosis_wolf1:{index:[], format:["-(10-15%)% to Enemy Poison Resists affected by Rabies"]}, //format:[[skill_Summon_Dire_Wolf:5]],
+metamorphosis_bear:{index:[], format:["Werebear Form specific changes:"]},
+metamorphosis_bear1:{index:[], format:["Gain Attacks cleave during Maul buff (cleave level based on Maul charge count)"]},
+metamorphosis_bear2:{index:[], format:["Grizzly Bear gains Attacks cleave during Maul buff (cleave level based on Maul charge count)"]},
 glow:1,
 fade:1,
 
@@ -1341,7 +1347,7 @@ skills_tree1:{index:["skills_tree1"], format:["+"," to Tree #1 Skills"]},	// unu
 skills_tree2:{index:["skills_tree2"], format:["+"," to Tree #2 Skills"]},	// unused
 skills_tree3:{index:["skills_tree3"], format:["+"," to Tree #3 Skills"]},	// unused
 
-proc_Dangoon_Discharge:{index:["proc_Dangoon_Discharge"], format:["Discharge proc is +"]},
+proc_Dangoon_Discharge:{index:["proc_Dangoon_Discharge"], format:["Discharge proc is +",21]},
 
 stamina_skillup:{index:["stamina_skillup"], format:["+","% Stamina"]},
 frw_skillup:{index:["frw_skillup"], format:["+","% Faster Run/Walk"]},

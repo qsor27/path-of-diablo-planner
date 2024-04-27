@@ -1,5 +1,8 @@
 ## Planner for Character Builds in Path of Diablo
 
+### Getting started with Planner editing
+Quick tour of the files within thie project: https://youtu.be/0GXcUw0btrA
+
 ### Features:
 * all skill info up to level 60 & synergy calculations
 * charm inventory

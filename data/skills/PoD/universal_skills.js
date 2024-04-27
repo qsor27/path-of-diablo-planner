@@ -73,7 +73,13 @@ var character_any = {
 		if (skillName == "Werebear" && elem == 0) {					result = (15 + sk[12].data.values[1][lycan_lvl]) }
 		if (skillName == "Werebear" && elem == 1) {					result += (sk[12].data.values[0][lycan_lvl]) }
 		if (skillName == "Summon Dire Wolf" && elem == 3) {			result = ((1 + (skill.data.values[6][lvl] / 100)) * skill.data.values[elem][character.difficulty]) }
-	// Necromancer
+		if (skillName == "DestructionMBoulder Proc" && elem < 2) { 				result *= (1 + (0.20*skills[7].level)) }
+		if (skillName == "DestructionMBoulder Proc" && elem > 1 && elem < 4) { 	result *= ((1 + (0.23*skills[0].level)) * (1+character.fDamage/100)) }
+		if (skillName == "DestructionMBoulder Proc" && elem > 3 && elem < 6) { 	result *= ((1 + (0.17*skills[0].level)) * (1+character.fDamage/100)) }
+		if (skillName == "DestructionVolcano Proc" && elem < 2) { 						result *= (1 + (0.20*skills[1].level)) }
+		if (skillName == "DestructionVolcano Proc" && elem > 1 && elem < 4) { 			result *= ((1 + (0.14*skills[4].level + 0.14*skills[9].level)) * (1+character.fDamage/100)) }
+
+		// Necromancer
 		if (skillName == "Desecrate" && elem > 0 && elem < 3) { 	result *= (1+character.pDamage/100) }
 	// Paladin
 		var phys_min = 0;

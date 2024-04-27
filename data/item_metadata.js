@@ -87,6 +87,7 @@ var runewords = {
 	Hearth:["Shael","Io","Thul"],
 	Hustle:["Shael","Ko","Eld"],
 	Metamorphosis:["Io","Cham","Fal"],
+	Mist:["Cham","Shael","Gul","Thul","Ith"],
 };
 
 /* automods = 
@@ -1337,6 +1338,8 @@ oskill_Desecrate:{index:["oskill_Desecrate"], format:["+"," to Desecrate"]},
 oskill_Zeal:{index:["oskill_Zeal"], format:["+"," to Zeal"]},
 oskill_Vengeance:{index:["oskill_Vengeance"], format:["+"," to Vengeance"]},
 oskill_Dashing_Strike:{index:["oskill_Dashing_Strike"], format:["+"," to Dashing Strike"]},
+oskill_Concentration:{index:["oskill_Concentration"], format:["+"," to Concentration"]},
+
 
 oskill_Frigerate:{index:["oskill_Frigerate"], format:["+"," to Frigerate"]},
 oskill_Shiver_Armor:{index:["oskill_Shiver_Armor"], format:["+"," to Shiver Armor"]},

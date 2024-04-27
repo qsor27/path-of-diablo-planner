@@ -836,7 +836,7 @@ function equip(group, val) {
 	for (item in equipment[src_group]) { if (equipment[src_group][item].name == val) { if (typeof(equipment[src_group][item].set_bonuses) != 'undefined') { set_bonuses = equipment[src_group][item].set_bonuses } } }
 	if (set_bonuses != "") { set = set_bonuses[0]; set_before = character[set]; }
 	if (old_set_bonuses != "") { old_set = old_set_bonuses[0]; old_set_before = character[old_set]; }
-	
+	 
 	// if replacing an item, previous item's affixes are removed from character
 	for (old_affix in equipped[group]) {
 		if (typeof(character[old_affix]) != 'undefined') { character[old_affix] -= equipped[group][old_affix] }

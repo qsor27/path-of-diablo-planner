@@ -96,7 +96,8 @@ var character_any = {
 		if (skillName == "Vengeance" && elem == 5) {				result = Math.floor(phys_max * (skill.data.values[9][lvl]/100) * (1+character.cDamage/100)) }
 		if (skillName == "Vengeance" && elem == 6) {				result = Math.floor(phys_min * (skill.data.values[10][lvl]/100) * (1+character.lDamage/100)) }
 		if (skillName == "Vengeance" && elem == 7) {				result = Math.floor(phys_max * (skill.data.values[10][lvl]/100) * (1+character.lDamage/100)) }
-	// Sorceress
+
+		// Sorceress
 		if (skillName == "Fire Ball" && elem < 2) { 				result *= (1+character.fDamage/100) }
 		if (skillName == "Fire Wall" && elem < 2) { 				result *= (1+character.fDamage/100) }
 		if (skillName == "Meteor" && elem < 2) { 					result *= (1+character.fDamage/100) }	// physical damage multipled by fire bonus (25% of total fire damage as extra physical damage)
@@ -106,7 +107,7 @@ var character_any = {
 		if (skillName == "Dangoon Discharge Proc" && elem < 2) { 	result *= ((1 + 0.03*skills_all["sorceress"][12].level + 0.03*skills_all["sorceress"][14].level))} // + 0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)) * (1+c.lDamage/100)) }
 //		if (skillName == "Dangoon Discharge Proc" && elem == 0) { 	result = ((1 + 0.03*skills_all["sorceress"][12].level + 0.03*skills_all["sorceress"][14].level))} // + 0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)) * (1+c.lDamage/100)) }
 //		if (skillName == "Dangoon Discharge Proc" && elem == 1) { 	result = ((1 + 0.03*skills_all["sorceress"][12].level + 0.03*skills_all["sorceress"][14].level))} // + 0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)) * (1+c.lDamage/100)) }
-
+ 
 //		if (skillName == "Dangoon Chain Proc" && elem == 0) { 	result = ((1 + 0.03*skills_all["sorceress"][11].level + 0.03*skills_all["sorceress"][15].level))} // + 0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)) * (1+c.lDamage/100)) }
 		if (skillName == "DangoonChain Proc" && elem < 2) { 		result *= ((1 + 0.03*skills_all["sorceress"][11].level + 0.03*skills_all["sorceress"][15].level))} // + 0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)) * (1+c.lDamage/100)) }
 
@@ -159,6 +160,8 @@ var character_any = {
 			if (effects[id].info.enabled == 1) { for (effect_id in effects) { if (effect_id != id && effect_id.split("-")[0] == id) { disableEffect(effect_id) } } }
 			result.damage_bonus = skill.data.values[1][lvl]; result.ar_bonus = skill.data.values[2][lvl]; result.radius = skill.data.values[3][lvl];
 		}
+		if (skill.name == "Concentration") { result.ar = skill.data.values[0][lvl]; result.damage_bonus = skill.data.values[1][lvl]; result.hammer_bonus = skill.data.values[2][lvl]; result.radius = 16; }
+
 		return result
 	},
 

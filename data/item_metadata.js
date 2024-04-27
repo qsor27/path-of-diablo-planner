@@ -87,6 +87,7 @@ var runewords = {
 	Hearth:["Shael","Io","Thul"],
 	Hustle:["Shael","Ko","Eld"],
 	Metamorphosis:["Io","Cham","Fal"],
+	Mist:["Cham","Shael","Gul","Thul","Ith"],
 };
 
 /* automods = 
@@ -1304,6 +1305,11 @@ skill_Hydra:{index:["skill_Hydra"], format:["+"," to Hydra (Sorceress only)"]},
 
 oskill_Warp:{index:["oskill_Warp"], format:["+"," to Warp"]},
 oskill_Ball_Lightning:{index:["oskill_Ball_Lightning"], format:["+"," to Ball Lightning"]},
+oskill_Dangoon_Discharge_Proc:{index:["oskill_Dangoon_Discharge_Proc"], format:["+"," Dangoon Discharge Proc"]},
+oskill_DangoonChain_Proc:{index:["oskill_DangoonChain_Proc"], format:["+"," Dangoon Chain Proc"]},
+oskill_DestructionVolcano_Proc:{index:["oskill_DestructionVolcano_Proc"], format:["+"," Destruction Volcano Proc"]},
+oskill_DestructionMBoulder_Proc:{index:["oskill_DestructionMBoulder_Proc"], format:["+"," Destruction MBoulder Proc"]},
+oskill_DestructionNova_Proc:{index:["oskill_DestructionNova_Proc"], format:["+"," Destructio Nova Proc"]},
 
 oskill_Inner_Sight:{index:["oskill_Inner_Sight"], format:["+"," to Inner Sight"]},
 oskill_Evade:{index:["oskill_Evade"], format:["+"," to Evade"]},
@@ -1332,6 +1338,8 @@ oskill_Desecrate:{index:["oskill_Desecrate"], format:["+"," to Desecrate"]},
 oskill_Zeal:{index:["oskill_Zeal"], format:["+"," to Zeal"]},
 oskill_Vengeance:{index:["oskill_Vengeance"], format:["+"," to Vengeance"]},
 oskill_Dashing_Strike:{index:["oskill_Dashing_Strike"], format:["+"," to Dashing Strike"]},
+oskill_Concentration:{index:["oskill_Concentration"], format:["+"," to Concentration"]},
+
 
 oskill_Frigerate:{index:["oskill_Frigerate"], format:["+"," to Frigerate"]},
 oskill_Shiver_Armor:{index:["oskill_Shiver_Armor"], format:["+"," to Shiver Armor"]},
@@ -1347,7 +1355,7 @@ skills_tree1:{index:["skills_tree1"], format:["+"," to Tree #1 Skills"]},	// unu
 skills_tree2:{index:["skills_tree2"], format:["+"," to Tree #2 Skills"]},	// unused
 skills_tree3:{index:["skills_tree3"], format:["+"," to Tree #3 Skills"]},	// unused
 
-proc_Dangoon_Discharge:{index:["proc_Dangoon_Discharge"], format:["Discharge proc is +",21]},
+//proc_Dangoon_Discharge:{index:["proc_Dangoon_Discharge"], format:["Discharge proc is +",21]},
 
 stamina_skillup:{index:["stamina_skillup"], format:["+","% Stamina"]},
 frw_skillup:{index:["frw_skillup"], format:["+","% Faster Run/Walk"]},

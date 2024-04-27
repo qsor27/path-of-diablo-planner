@@ -2182,7 +2182,7 @@ function getCTCSkillData(name, lvl, group) {
 		//result.lDamage_min *= ((1 + 0.03*sk[12].level + 0.03*sk[14].level + 0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)) * (1+c.lDamage/100));
 		//result.lDamage_max *= ((skill.data.values[2][lvl]) + (0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2))); 
 		//result.lDamage_max = skill.data.values[2][lvl] //+ (0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2));
-//		result.lDamage =	(0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2) * (1+c.lDamage/100))
+		result.lDamage =	(0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2) * (1+c.lDamage/100))
 		if (character.class_name == "Sorceress") {
 			//result.lDamage *= ((1 + 0.03*sk[12].level + 0.03*sk[14].level + 0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)) * (1+c.lDamage/100));
 			result.lDamage_min = skill.data.values[1][lvl] + (1 + 0.03*sk[12].level + 0.03*sk[14].level); // + 0.01*Math.floor(((character.energy + character.all_attributes)*(1+character.max_energy/100))/2)) * (1+c.lDamage/100))));
@@ -4046,7 +4046,7 @@ function updatePrimaryStats() {
 		}
 	}
 	if (c.flamme > 0) { document.getElementById("flamme").innerHTML = "Righteous Fire deals "+Math.floor((c.flamme/100*lifeTotal)*(1+c.fDamage/100))+" damage per second<br>" } else { document.getElementById("flamme").innerHTML = "" }
-}
+} 
 
 // updateSecondaryStats - Updates stats shown on the secondary (Path of Diablo) stat page
 // ---------------------------------
@@ -4276,7 +4276,14 @@ function updateCTC() {
 		if (typeof(equipped[group].ctc) != 'undefined') {
 			if (equipped[group].ctc != "") {
 				for (let i = 0; i < equipped[group].ctc.length; i++) {
-					var stat = equipped[group].ctc[i][0]+"% chance to cast level "+equipped[group].ctc[i][1]+" "+equipped[group].ctc[i][2]+" "+equipped[group].ctc[i][3];
+					if (equipped[group].ctc[i][2] == "Discharge") {	
+						var stat = equipped[group].ctc[i][0]+"% chance "+equipped[group].ctc[i][1]+" "+equipped[group].ctc[i][2]+" "+equipped[group].ctc[i][3] ;
+//						var dam = getCTCSkillData("Discharge",21) ;
+//						var stat = equipped[group].ctc[i][2]+ " Proc does " +dam.result ;
+						stats += (stat + "<br>")
+					}  
+
+					var stat = equipped[group].ctc[i][0]+"% chance to taco cast level "+equipped[group].ctc[i][1]+" "+equipped[group].ctc[i][2]+" "+equipped[group].ctc[i][3];
 					stats += (stat + "<br>")
 				}
 			}

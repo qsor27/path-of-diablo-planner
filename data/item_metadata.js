@@ -88,6 +88,9 @@ var runewords = {
 	Hustle:["Shael","Ko","Eld"],
 	Metamorphosis:["Io","Cham","Fal"],
 	Mist:["Cham","Shael","Gul","Thul","Ith"],
+	Temper:["Shael","Io","Ral"],
+	Wisdom:["Pul","Ith","Eld"],
+	Unbending_Will:["Fal","Io","Ith","Eld","El","Hel"],
 };
 
 /* automods = 

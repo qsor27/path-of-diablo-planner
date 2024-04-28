@@ -1312,7 +1312,7 @@ oskill_Dangoon_Discharge_Proc:{index:["oskill_Dangoon_Discharge_Proc"], format:[
 oskill_DangoonChain_Proc:{index:["oskill_DangoonChain_Proc"], format:["+"," Dangoon Chain Proc"]},
 oskill_DestructionVolcano_Proc:{index:["oskill_DestructionVolcano_Proc"], format:["+"," Destruction Volcano Proc"]},
 oskill_DestructionMBoulder_Proc:{index:["oskill_DestructionMBoulder_Proc"], format:["+"," Destruction MBoulder Proc"]},
-oskill_DestructionNova_Proc:{index:["oskill_DestructionNova_Proc"], format:["+"," Destructio Nova Proc"]},
+oskill_DestructionNova_Proc:{index:["oskill_DestructionNova_Proc"], format:["+"," Destruction Nova Proc"]},
 
 oskill_Inner_Sight:{index:["oskill_Inner_Sight"], format:["+"," to Inner Sight"]},
 oskill_Evade:{index:["oskill_Evade"], format:["+"," to Evade"]},

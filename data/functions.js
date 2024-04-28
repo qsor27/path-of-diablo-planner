@@ -4276,15 +4276,19 @@ function updateCTC() {
 		if (typeof(equipped[group].ctc) != 'undefined') {
 			if (equipped[group].ctc != "") {
 				for (let i = 0; i < equipped[group].ctc.length; i++) {
-					if (equipped[group].ctc[i][2] == "Discharge") {	
-						var stat = equipped[group].ctc[i][0]+"% chance "+equipped[group].ctc[i][1]+" "+equipped[group].ctc[i][2]+" "+equipped[group].ctc[i][3] ;
-//						var dam = getCTCSkillData("Discharge",21) ;
-//						var stat = equipped[group].ctc[i][2]+ " Proc does " +dam.result ;
-						stats += (stat + "<br>")
-					}  
-
+//					var stat = equipped[group].ctc[i][0]+"% chance to taco cast level "+equipped[group].ctc[i][1]+" "+equipped[group].ctc[i][2]+" "+equipped[group].ctc[i][3];
+//					if (equipped[group].ctc[i][2] == "Discharge") {	
+//						var stat = equipped[group].ctc[i][0]+"% chance "+equipped[group].ctc[i][1]+" "+equipped[group].ctc[i][2]+" "+equipped[group].ctc[i][3] ;
+//						var dam = {getCTCSkillData}.result.lDamage_min ;
+//						var stat = "level "+equipped[group].ctc[i][1]+" "+equipped[group].ctc[i][2]+ " Proc does "; // +getCTCSkillData("Discharge",21).result+" damage";
+//						stats += (stat + "<br>")
+//					}  
+//					else { var stat = equipped[group].ctc[i][0]+"% chance to taco cast level "+equipped[group].ctc[i][1]+" "+equipped[group].ctc[i][2]+" "+equipped[group].ctc[i][3];
 					var stat = equipped[group].ctc[i][0]+"% chance to taco cast level "+equipped[group].ctc[i][1]+" "+equipped[group].ctc[i][2]+" "+equipped[group].ctc[i][3];
-					stats += (stat + "<br>")
+					stats += (stat + "<br>")					
+//				}
+//					var stat = equipped[group].ctc[i][0]+"% chance to taco cast level "+equipped[group].ctc[i][1]+" "+equipped[group].ctc[i][2]+" "+equipped[group].ctc[i][3];
+//					stats += (stat + "<br>")
 				}
 			}
 		}

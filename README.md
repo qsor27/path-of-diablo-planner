@@ -28,6 +28,7 @@ If your phone doesn't have a way to emulate ctrl+click or shift+click, you can s
 https://build.pathofdiablo.com/?v=2&class=sorceress&level=99&quests=1&strength=45&vitality=460
 
 ### Known Issues:
+* "+1 (each) skills" charm isn't applied to some skills
 * Charms can't be moved into a new space below the original space if those spaces overlap
 * Shift + Right Click in Firefox doesn't work (and still opens the default menu)
 * Socketed gems/runes/jewels sometimes aren't aligned like they should be

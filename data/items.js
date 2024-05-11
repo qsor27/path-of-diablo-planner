@@ -952,7 +952,7 @@ var unequipped = {			strength:0, dexterity:0, vitality:0, energy:0, life:0, mana
 	{only:"amazon", rarity:"rare", name:"Archer's Arrows", type:"quiver", req_level:68, skills_bows:2, pierce:25, ias:16, damage_min:26, damage_max:31, max_damage_per_level:0.625, dstrike:20},
 	{only:"amazon", rarity:"rare", name:"Vampiric Arrows", type:"quiver", req_level:68, skills_bows:2, pierce:25, ias:16, mana_per_ranged_hit:9, mana_leech:3, all_res:15},
 	{not:["amazon"], rarity:"rare", name:"Bolts of Evocation", type:"quiver", req_level:65, all_skills:1, skills_ele_poison_all:2, pierce:25, mf_per_level:0.5, base:"Bolts"},
-//	{not:["amazon"], rarity:"rare", name:"Queen's Arrows", type:"quiver", req_level:65, all_skills:1, max_damage_per_level:0.625, pierce:25, damage_min:26, damage_max:31, ias:16, dstrike:20},
+	{not:["amazon"], rarity:"rare", name:"Shadow Eye Arrows", type:"quiver", req_level:65, all_skills:1, skills_ele_poison_all:2, max_damage_per_level:0.625, pierce:19, mana_per_ranged_hit:9, mana_per_kill:3},
 	{only:"amazon", rarity:"rare", name:"Ballist’s Arrows of Evocation", type:"quiver", req_level:68, skills_bows:3, skills_ele_poison_all:2, pierce:25, ias:16, damage_min:26, damage_max:31, max_damage_per_level:0.625, dstrike:20},
 //	{only:"amazon", rarity:"rare", name:"Vampiric Arrows", type:"quiver", req_level:68, skills_bows:2, pierce:25, ias:16, mana_per_ranged_hit:9, mana_leech:3, all_res:15},
 	{name:"Dragonbreath", type:"quiver", req_level:12, fDamage_max_per_level:2, fRes:15, extra_arrows_Fire_Arrow:2, pod_changes:1, img:"Dragonbreath"},

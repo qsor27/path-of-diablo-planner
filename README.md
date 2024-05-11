@@ -41,6 +41,9 @@ https://build.pathofdiablo.com/?v=2&class=sorceress&level=99&quests=1&strength=4
 * Effective Magic Find (displayed after Magic Find) shows how much is applied to uniques
 
 ### Future Ideas:
+* party tracking (i.e. buffs from party members)
+    * Some party buff effects available via "charms" 
+* Add calculated damage values for CtC (chance to cast) skills in a consistent manner
 * mercenary stats
 * total calculated damage for minions
 * IAS breakpoint info (frames per attack) for skills which don't use normal breakpoints
@@ -54,7 +57,6 @@ https://build.pathofdiablo.com/?v=2&class=sorceress&level=99&quests=1&strength=4
 * character importing
 * monster stat calculations
 * debuff tracking
-* party tracking (i.e. buffs from party members)
 * pvp info
 * dynamic item/skill recommendations
 

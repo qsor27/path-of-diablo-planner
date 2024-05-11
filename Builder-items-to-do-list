@@ -40,14 +40,14 @@ Done    Stormspire chance to cast Ball Lightning on Attack increased from 13% to
     Warlord’s Trust stat ‘Repairs 1 Durability In 4 Seconds’ replaced by ‘+30% Attack Speed’. Also added ‘+12 to Whirling Axes’ (oskill) and ‘+60% chance to release Whirling Axes’.
         Need to check if comparable properties exist, if so just use; it not create and then apply
 
-    New Rainbow facet: ‘+% Physical Skill Damage’ & ‘-% to Enemy Physical Resistances’
-    New Rainbow facet: ‘+% Magical Skill Damage’ & ‘-% to Enemy Magical Resistances’.
-        Need to check if comparable properties exist, if so just use; it not create and then apply
+Done   New Rainbow facet: ‘+% Physical Skill Damage’ & ‘-% to Enemy Physical Resistances’
+Done    New Rainbow facet: ‘+% Magical Skill Damage’ & ‘-% to Enemy Magical Resistances’.
+Done        Need to check if comparable properties exist, if so just use; it not create and then apply
 
 Sets
 
-    Trang Oul Guise (helmet) new stat: “+1 to Elemental & Poison Skills”.
-        Need to apply this affect to all elemental and poison skills on a class by class basis
+Done    Trang Oul Guise (helmet) new stat: “+1 to Elemental & Poison Skills”.
+Done        Need to apply this affect to all elemental and poison skills on a class by class basis
 
 Done    Trang Oul Full Set bonus “+Meteor” (oskill) increased from +10 to +17 and “+Fire Wall” (oskill) increased from +13 to +15”.
 Done    M’avina’s Caster (bow) gains a new stat: +1 to All Skills.

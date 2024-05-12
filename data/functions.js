@@ -3856,8 +3856,10 @@ function getNonPhysWeaponDamage(group) {
 //	var mDamage_sockets_filled = ~~(equipped.weapon.mDamage_per_socketed*socketed.weapon.socketsFilled)+~~(equipped.offhand.mDamage_per_socketed*socketed.offhand.socketsFilled);
 //	var m_min = (c.mDamage_min +mDamage_sockets_filled)*(1+c.mDamage/100);
 //	var m_max = (c.mDamage_max +mDamage_sockets_filled)*(1+c.mDamage/100);
-	var m_min = c.mDamage_min;
-	var m_max = c.mDamage_max;
+//	var m_min = c.mDamage_min;
+//	var m_max = c.mDamage_max;
+	var m_min = c.mDamage_min*(1+c.mDamage/100);
+	var m_max = c.mDamage_max*(1+c.mDamage/100);
 	if (offhandType == "weapon") {
 		f_min = (c.fDamage_min-~~(equipped[other].fDamage_min))*(1+c.fDamage/100);
 		f_max = ((c.fDamage_max-~~(equipped[other].fDamage_max))+(c.level*c.fDamage_max_per_level))*(1+c.fDamage/100);
@@ -3869,9 +3871,11 @@ function getNonPhysWeaponDamage(group) {
 		p_max = (c.pDamage_all+c.pDamage_max-~~(equipped[other].pDamage_max))*(1+c.pDamage/100);
 //		m_min = (c.mDamage_min - ~~(equipped[other].mDamage_min)+mDamage_sockets_filled)*(1+c.mDamage/100);
 //		m_max = (c.mDamage_max - ~~(equipped[other].mDamage_max)+mDamage_sockets_filled)*(1+c.mDamage/100);
-		m_min = c.mDamage_min - ~~(equipped[other].mDamage_min);
-		m_max = c.mDamage_max - ~~(equipped[other].mDamage_max);
-	}
+//		m_min = c.mDamage_min - ~~(equipped[other].mDamage_min);
+//		m_max = c.mDamage_max - ~~(equipped[other].mDamage_max);
+		m_min = (c.mDamage_min - ~~(equipped[other].mDamage_min))*(1+c.mDamage/100);
+		m_max = (c.mDamage_max - ~~(equipped[other].mDamage_max))*(1+c.mDamage/100);
+}
 	if (f_max < f_min) { f_max = f_min + 1 };
 	if (c_max < c_min) { c_max = c_min + 1 };
 	if (l_max < l_min) { l_max = l_min + 1 };
@@ -4150,10 +4154,12 @@ function updateSecondaryStats() {
 	document.getElementById("cdamage").innerHTML = c.cDamage; if (c.cDamage > 0) { document.getElementById("cdamage").innerHTML += "%" }
 	document.getElementById("ldamage").innerHTML = c.lDamage; if (c.lDamage > 0) { document.getElementById("ldamage").innerHTML += "%" }
 	document.getElementById("pdamage").innerHTML = c.pDamage; if (c.pDamage > 0) { document.getElementById("pdamage").innerHTML += "%" }
+	document.getElementById("mdamage").innerHTML = c.mDamage; if (c.mDamage > 0) { document.getElementById("mdamage").innerHTML += "%" }
 	document.getElementById("fpierce").innerHTML = c.fPierce; if (c.fPierce > 0) { document.getElementById("fpierce").innerHTML += "%" }
 	document.getElementById("cpierce").innerHTML = c.cPierce; if (c.cPierce > 0) { document.getElementById("cpierce").innerHTML += "%" }
 	document.getElementById("lpierce").innerHTML = c.lPierce; if (c.lPierce > 0) { document.getElementById("lpierce").innerHTML += "%" }
 	document.getElementById("ppierce").innerHTML = c.pPierce; if (c.pPierce > 0) { document.getElementById("ppierce").innerHTML += "%" }
+	document.getElementById("mpierce").innerHTML = c.mPierce; if (c.mPierce > 0) { document.getElementById("mpierce").innerHTML += "%" }
 	
 	document.getElementById("pierce").innerHTML = c.pierce + c.pierce_skillup; if (c.pierce > 0 || c.pierce_skillup > 0) { document.getElementById("pierce").innerHTML += "%" }
 	document.getElementById("cblow").innerHTML = c.cblow; if (c.cblow > 0) { document.getElementById("cblow").innerHTML += "%" }
@@ -4186,6 +4192,7 @@ function updateSecondaryStats() {
 	document.getElementById("enemy_cres").innerHTML = c.enemy_cRes; if (c.enemy_cRes < 0) { document.getElementById("enemy_cres").innerHTML += "%" }
 	document.getElementById("enemy_lres").innerHTML = c.enemy_lRes; if (c.enemy_lRes < 0) { document.getElementById("enemy_lres").innerHTML += "%" }
 	document.getElementById("enemy_pres").innerHTML = c.enemy_pRes; if (c.enemy_pRes < 0) { document.getElementById("enemy_pres").innerHTML += "%" }
+	document.getElementById("enemy_mres").innerHTML = c.enemy_mRes; if (c.enemy_mRes < 0) { document.getElementById("enemy_mres").innerHTML += "%" }
 }
 
 // updateTertiaryStats - Updates other stats

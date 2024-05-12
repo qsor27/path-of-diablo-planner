@@ -3853,6 +3853,9 @@ function getNonPhysWeaponDamage(group) {
 	var l_max = (c.lDamage_max+(c.level*c.lDamage_max_per_level)+(Math.floor(energyTotal/2)*c.lDamage_max_per_2_energy))*(1+c.lDamage/100);
 	var p_min = (c.pDamage_all+c.pDamage_min)*(1+c.pDamage/100);	// TODO: Damage over time should be separate from regular damage. Calculate poison bitrate.
 	var p_max = (c.pDamage_all+c.pDamage_max)*(1+c.pDamage/100);	//	 Also, poison doesn't overlap from different sources?
+//	var mDamage_sockets_filled = ~~(equipped.weapon.mDamage_per_socketed*socketed.weapon.socketsFilled)+~~(equipped.offhand.mDamage_per_socketed*socketed.offhand.socketsFilled);
+//	var m_min = (c.mDamage_min +mDamage_sockets_filled)*(1+c.mDamage/100);
+//	var m_max = (c.mDamage_max +mDamage_sockets_filled)*(1+c.mDamage/100);
 	var m_min = c.mDamage_min;
 	var m_max = c.mDamage_max;
 	if (offhandType == "weapon") {
@@ -3864,6 +3867,8 @@ function getNonPhysWeaponDamage(group) {
 		l_max = ((c.lDamage_max-~~(equipped[other].lDamage_max))+(c.level*c.lDamage_max_per_level)+(Math.floor(energyTotal/2)*c.lDamage_max_per_2_energy))*(1+c.lDamage/100);
 		p_min = (c.pDamage_all+c.pDamage_min-~~(equipped[other].pDamage_min))*(1+c.pDamage/100);
 		p_max = (c.pDamage_all+c.pDamage_max-~~(equipped[other].pDamage_max))*(1+c.pDamage/100);
+//		m_min = (c.mDamage_min - ~~(equipped[other].mDamage_min)+mDamage_sockets_filled)*(1+c.mDamage/100);
+//		m_max = (c.mDamage_max - ~~(equipped[other].mDamage_max)+mDamage_sockets_filled)*(1+c.mDamage/100);
 		m_min = c.mDamage_min - ~~(equipped[other].mDamage_min);
 		m_max = c.mDamage_max - ~~(equipped[other].mDamage_max);
 	}

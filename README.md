@@ -28,6 +28,10 @@ If your phone doesn't have a way to emulate ctrl+click or shift+click, you can s
 https://build.pathofdiablo.com/?v=2&class=sorceress&level=99&quests=1&strength=45&vitality=460
 
 ### Known Issues:
+* Some spells that deal magic damage (ex: FoH, Bone Spear) are not affected by magic facets or charms; attacks (like Dashing Strike) do display properly
+* Displayed damage is incorrect for skills that care about on vs off weapon ED, added minus ED
+charms to compensate
+* Barb combat skills remain "red" even when prerequisites are met
 * "+1 (each) skills" charm isn't applied to some skills
 * Charms can't be moved into a new space below the original space if those spaces overlap
 * Shift + Right Click in Firefox doesn't work (and still opens the default menu)

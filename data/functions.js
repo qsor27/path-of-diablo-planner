@@ -3829,6 +3829,8 @@ function getWeaponDamage(str, dex, group, thrown) {
 	var phys_min = (base_min * (1+e_damage/100) + c.damage_min + c.level*c.min_damage_per_level - phys_min_other);
 	var phys_max = (base_max * (1+(e_damage+(c.level*c.e_max_damage_per_level))/100) + c.damage_max + c.level*c.max_damage_per_level - phys_max_other);
 	var phys_mult = (1+statBonus+(c.damage_bonus+weapon_skillup)/100);
+//	if (c.skillName == "Shock Wave") {var phys_mult = (1+statBonus+((c.damage_bonus+(.25*c.edamage)-(c.edamage/100))+weapon_skillup)/100);}
+//	else {var phys_mult = (1+statBonus+(c.damage_bonus+weapon_skillup)/100)}
 	if (phys_max < phys_min) { phys_max = phys_min + 1 };
 	var values = [phys_min, phys_max, phys_mult];
 	
@@ -4162,6 +4164,8 @@ function updateSecondaryStats() {
 	document.getElementById("mpierce").innerHTML = c.mPierce; if (c.mPierce > 0) { document.getElementById("mpierce").innerHTML += "%" }
 	
 	document.getElementById("pierce").innerHTML = c.pierce + c.pierce_skillup; if (c.pierce > 0 || c.pierce_skillup > 0) { document.getElementById("pierce").innerHTML += "%" }
+	document.getElementById("e_damage").innerHTML = c.e_damage; if (c.e_damage > 0) { document.getElementById("e_damage").innerHTML += "%" }
+	document.getElementById("damage_bonus").innerHTML = c.damage_bonus; if (c.damage_bonus > 0) { document.getElementById("damage_bonus").innerHTML += "%" }
 	document.getElementById("cblow").innerHTML = c.cblow; if (c.cblow > 0) { document.getElementById("cblow").innerHTML += "%" }
 	document.getElementById("dstrike").innerHTML = c.dstrike + Math.floor(c.level*c.dstrike_per_level); if (c.dstrike > 0 || c.dstrike_per_level > 0) { document.getElementById("dstrike").innerHTML += "%" }
 	document.getElementById("cstrike").innerHTML = c.cstrike + c.cstrike_skillup; if (c.cstrike > 0 || c.cstrike_skillup > 0) { document.getElementById("cstrike").innerHTML += "%" }
@@ -4296,7 +4300,7 @@ function updateCTC() {
 //						stats += (stat + "<br>")
 //					}  
 //					else { var stat = equipped[group].ctc[i][0]+"% chance to taco cast level "+equipped[group].ctc[i][1]+" "+equipped[group].ctc[i][2]+" "+equipped[group].ctc[i][3];
-					var stat = equipped[group].ctc[i][0]+"% chance to taco cast level "+equipped[group].ctc[i][1]+" "+equipped[group].ctc[i][2]+" "+equipped[group].ctc[i][3];
+					var stat = equipped[group].ctc[i][0]+"% chance to cast level "+equipped[group].ctc[i][1]+" "+equipped[group].ctc[i][2]+" "+equipped[group].ctc[i][3];
 					stats += (stat + "<br>")					
 //				}
 //					var stat = equipped[group].ctc[i][0]+"% chance to taco cast level "+equipped[group].ctc[i][1]+" "+equipped[group].ctc[i][2]+" "+equipped[group].ctc[i][3];

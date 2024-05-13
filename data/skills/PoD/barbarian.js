@@ -28,12 +28,12 @@ var character_barbarian = {class_name:"Barbarian", strength:30, dexterity:20, vi
 		if (skill.name == "Concentrate" && elem == 2) { 	result += (5*skills[28].level + 10*skills[2].level + 10*skills[6].level) }
 		if (skill.name == "Cleave" && elem < 2) { 			result *= (1 + (0.15*skills[21].level)) }
 		//if (skill.name == "Pulverize" && elem < 2) { 			result *= (1 + (0.15*skills[31].level)) }
-		if (skill.name == "Stun" && elem < 2) { 			result *= (1 + (0.10*skills[28].level + 0.10*skills[8].level)) }
+		if (skill.name == "Stun" && elem < 2) { 			result *= ((1 + (0.10*skills[28].level + 0.10*skills[8].level)) * (1+character.mDamage/100)) }
 		if (skill.name == "Stun" && elem == 2) { 			result += (5*skills[23].level) }
 		if (skill.name == "Bash" && elem == 2) { 			result += (5*skills[23].level) }
 		if (skill.name == "Bash" && elem == 3) { 			result += (10*skills[25].level) }
 		if (skill.name == "Leap Attack" && elem == 0) { 	result += (20*skills[22].level) }
-		if (skill.name == "Ethereal Throw" && elem < 2) { 	result *= (1 + (0.04*skills[27].level + 0.04*skills[28].level)) }
+		if (skill.name == "Ethereal Throw" && elem < 2) { 	result *= ((1 + (0.04*skills[27].level + 0.04*skills[28].level)) * (1+character.mDamage/100)) }
 		if (skill.name == "Whirling Axes" && elem < 2) { 	result *= ((1 + (0.14*skills[8].level + 0.14*skills[21].level + 0.01*Math.floor(character.dexterity + character.all_attributes)))) }
 	return result
 	},
@@ -101,7 +101,7 @@ var character_barbarian = {class_name:"Barbarian", strength:30, dexterity:20, vi
 		else if (skill.name == "Pulverize") { 		damage_min = character.getSkillData(skill,lvl,1); damage_max = character.getSkillData(skill,lvl,2); ar_bonus = character.getSkillData(skill,lvl,0); }
 		else if (skill.name == "Stun") { 			mDamage_min = character.getSkillData(skill,lvl,0); mDamage_max = character.getSkillData(skill,lvl,1); ar_bonus = character.getSkillData(skill,lvl,2); }
 		else if (skill.name == "Power Throw") {		weapon_damage = 120; ar_bonus = character.getSkillData(skill,lvl,1); damage_min = character.getSkillData(skill,lvl,2); damage_max = character.getSkillData(skill,lvl,3); }	
-		else if (skill.name == "Bash") { 			weapon_damage = 110-(110/100*character.getSkillData(skill,lvl,0)); ar_bonus = character.getSkillData(skill,lvl,2); damage_bonus = character.getSkillData(skill,lvl,3); mDamage_min = phys_min*((110/100*character.getSkillData(skill,lvl,0))/100)*(phys_mult+damage_bonus/100); mDamage_max = phys_max*((110/100*character.getSkillData(skill,lvl,0))/100)*(phys_mult+damage_bonus/100); }
+		else if (skill.name == "Bash") { 			weapon_damage = 110-(110/100*character.getSkillData(skill,lvl,0)); ar_bonus = character.getSkillData(skill,lvl,2); damage_bonus = character.getSkillData(skill,lvl,3); mDamage_min = phys_min*((110/100*character.getSkillData(skill,lvl,0))/100)*(phys_mult+damage_bonus/100) * (1+character.mDamage/100); mDamage_max = phys_max*((110/100*character.getSkillData(skill,lvl,0))/100)*(phys_mult+damage_bonus/100) * (1+character.mDamage/100); }
 		else if (skill.name == "Leap Attack") {		weapon_damage = 175; ar_bonus = character.getSkillData(skill,lvl,1); damage_bonus = character.getSkillData(skill,lvl,0); }
 		else if (skill.name == "Ethereal Throw") { 	weapon_damage = 60; mDamage_min = character.getSkillData(skill,lvl,0); mDamage_max = character.getSkillData(skill,lvl,1); }
 		else if (skill.name == "Whirlwind") {		ar_bonus = character.getSkillData(skill,lvl,1); damage_bonus = character.getSkillData(skill,lvl,0); }

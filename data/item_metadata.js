@@ -1163,6 +1163,8 @@ skill_Increased_Stamina:{index:["skill_Increased_Stamina"], format:["+"," to Inc
 skill_Iron_Skin:{index:["skill_Iron_Skin"], format:["+"," to Iron Skin (Barbarian only)"]},
 skill_Increased_Speed:{index:["skill_Increased_Speed"], format:["+"," to Increased Speed (Barbarian only)"]},
 skill_Natural_Resistance:{index:["skill_Natural_Resistance"], format:["+"," to Natural Resistance (Barbarian only)"]},
+skill_Puncture:{index:["skill_Puncture"], format:["+"," to Puncture (Barbarian only)"]},
+skill_Whirling_Axes:{index:["skill_Whirling_Axes"], format:["+"," to Whirling Axes (Barbarian only)"]},
 skill_Double_Swing:{index:["skill_Double_Swing"], format:["+"," to Double Swing (Barbarian only)"]},
 skill_Frenzy:{index:["skill_Frenzy"], format:["+"," to Frenzy (Barbarian only)"]},
 skill_Concentrate:{index:["skill_Concentrate"], format:["+"," to Concentrate (Barbarian only)"]},
@@ -1330,6 +1332,7 @@ oskill_Battle_Orders:{index:["oskill_Battle_Orders"], format:["+"," to Battle Or
 oskill_Battle_Cry:{index:["oskill_Battle_Cry"], format:["+"," to Battle Cry"]},
 oskill_Bash:{index:["oskill_Bash"], format:["+"," to Bash"]},
 oskill_Edged_Weapon_Mastery:{index:["oskill_Edged_Weapon_Mastery"], format:["+"," to Edged Weapon Mastery"]},
+oskill_Whirling_Axes:{index:["oskill_Whirling_Axes"], format:["+"," to Whirling Axes"]},
 
 oskill_Lycanthropy:{index:["oskill_Lycanthropy"], format:["+"," to Lycanthropy"]},
 oskill_Werebear:{index:["oskill_Werebear"], format:["+"," to Werebear"]},

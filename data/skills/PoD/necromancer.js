@@ -39,9 +39,9 @@ var character_necromancer = {class_name:"Necromancer", strength:15, dexterity:25
 //		if (skill.name == "Corpse Explosion" && elem < 2) { 		result *= (1 + (0.12*skills[9].level)) }
 		if (skill.name == "Bone Armor" && elem == 0) { 					result += 20*skills[17].level + 20*skills[18].level }
 		if (skill.name == "Bone Wall" && elem < 1) { 					result *= (1 + (0.10*skills[13].level)) }
-		if (skill.name == "Teeth" && elem > 0 && elem < 3) { 			result *= (1 + (0.17*skills[16].level + 0.17*skills[18].level)) }
-		if (skill.name == "Bone Spear" && elem < 2) { 					result *= (1 + (0.07*skills[12].level + 0.07*skills[18].level)) }
-		if (skill.name == "Bone Spirit" && elem < 2) { 					result *= (1 + (0.10*skills[12].level + 0.10*skills[16].level)) }
+		if (skill.name == "Teeth" && elem > 0 && elem < 3) { 			result *= ((1 + (0.17*skills[16].level + 0.17*skills[18].level)) * (1+character.mDamage/100)) }
+		if (skill.name == "Bone Spear" && elem < 2) { 					result *= ((1 + (0.07*skills[12].level + 0.07*skills[18].level)) * (1+character.mDamage/100)) }
+		if (skill.name == "Bone Spirit" && elem < 2) { 					result *= ((1 + (0.10*skills[12].level + 0.10*skills[16].level)) * (1+character.mDamage/100)) }
 		if (skill.name == "Deadly Poison" && elem > 0 && elem < 3) { 	result *= ((1 + (0.10*skills[15].level + 0.10*skills[19].level)) * (1+character.pDamage/100)) }
 		if (skill.name == "Desecrate" && elem > 0 && elem < 3) { 		result *= ((1 + (0.16*skills[11].level + 0.16*skills[19].level)) * (1+character.pDamage/100)) }
 		if (skill.name == "Poison Nova" && elem < 2) { 					result *= ((1 + (0.13*skills[11].level + 0.13*skills[15].level)) * (1+character.pDamage/100)) }

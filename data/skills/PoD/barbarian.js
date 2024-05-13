@@ -137,7 +137,8 @@ var character_barbarian = {class_name:"Barbarian", strength:30, dexterity:20, vi
 		if (s < 10) {
 			skills[s].extra_levels += character.skills_warcries
 			skills[s].extra_levels += character.skills_tree1
-		} else if (s > 17 && s < 29) {
+//		} else if (s > 17 && s < 29) {
+		} else if (s > 20) {
 			skills[s].extra_levels += character.skills_combat_barbarian
 			skills[s].extra_levels += character.skills_tree3
 		} else {

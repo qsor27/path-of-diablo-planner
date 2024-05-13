@@ -31,7 +31,7 @@ https://build.pathofdiablo.com/?v=2&class=sorceress&level=99&quests=1&strength=4
 * Some spells that deal magic damage (ex: FoH, Bone Spear) are not affected by magic facets or charms; attacks (like Dashing Strike) do display properly
 * Displayed damage is incorrect for skills that care about on vs off weapon ED, added minus ED
 charms to compensate
-* Barb combat skills remain "red" even when prerequisites are met
+* ~~Barb combat skills remain "red" even when prerequisites are met~~ This has been fixed, barb combat tree rewritten to properly apply prerequisites
 * "+1 (each) skills" charm isn't applied to some skills
 * Charms can't be moved into a new space below the original space if those spaces overlap
 * Shift + Right Click in Firefox doesn't work (and still opens the default menu)
@@ -49,6 +49,7 @@ charms to compensate
 * party tracking (i.e. buffs from party members)
     * Some party buff effects available via "charms" 
 * Add calculated damage values for CtC (chance to cast) skills in a consistent manner
+* Show damage breakdown instead of just the total damage 
 * mercenary stats
 * total calculated damage for minions
 * IAS breakpoint info (frames per attack) for skills which don't use normal breakpoints

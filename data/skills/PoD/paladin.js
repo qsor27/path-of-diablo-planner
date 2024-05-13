@@ -28,7 +28,7 @@ var character_paladin = {class_name:"Paladin", strength:25, dexterity:20, vitali
 		if (skill.name == "Holy Fire" && elem < 4) { 			result *= ((1+(0.08*skills[1].level + 0.08*skills[9].level)) * (1+character.fDamage/100)) }
 		if (skill.name == "Holy Freeze" && elem < 4) { 			result *= ((1+(0.04*skills[3].level + 0.06*skills[9].level)) * (1+character.cDamage/100)) }
 		if (skill.name == "Holy Shock" && elem < 4) { 			result *= ((1+(0.04*skills[5].level + 0.06*skills[9].level)) * (1+character.lDamage/100)) }
-		if (skill.name == "Sanctuary" && elem > 0 && elem < 3) { result *= (1+(0.18*skills[4].level + 0.18*skills[30].level)) }
+		if (skill.name == "Sanctuary" && elem > 0 && elem < 3) { result *= ((1+(0.18*skills[4].level + 0.18*skills[30].level))* (1+character.mDamage/100)) }
 
 		if (skill.name == "Sacrifice" && elem == 1) { 	result += (10*skills[8].level + 5*skills[18].level) }
 		if (skill.name == "Smite" && elem == 0) { 		result += (8*skills[2].level) }
@@ -54,11 +54,11 @@ var character_paladin = {class_name:"Paladin", strength:25, dexterity:20, vitali
 		if (skill.name == "Vengeance" && elem == 8) { 						result += (12*skills[1].level + 2*skills[9].level) }
 		if (skill.name == "Vengeance" && elem == 9) { 						result += (12*skills[3].level + 2*skills[9].level) }
 		if (skill.name == "Vengeance" && elem == 10) { 						result += (12*skills[5].level + 2*skills[9].level) }
-		if (skill.name == "Blessed Hammer" && elem < 2) { 					result *= ((1+(0.14*skills[6].level + 0.14*skills[13].level)) * (1+character.hammer_bonus/100)) }
+		if (skill.name == "Blessed Hammer" && elem < 2) { 					result *= ((1+(0.14*skills[6].level + 0.14*skills[13].level)) * (1+character.hammer_bonus/100) * (1+character.mDamage/100)) }
 		if (skill.name == "Holy Shield" && elem == 3) { 					result += (15*skills[2].level) }
 		if (skill.name == "Fist of the Heavens" && elem < 2) { 				result *= ((1+(0.13*skills[22].level)) * (1+character.mDamage/100)) }
 		if (skill.name == "Fist of the Heavens" && elem >1 && elem < 4) { 	result *= ((1+(0.08*skills[16].level)) * (1+character.lDamage/100)) }
-		if (skill.name == "Dashing Strike" && elem > 0 && elem < 3) { 		result *= (1+(0.12*skills[21].level + 0.12*skills[24].level + 0.12*skills[28].level)) }
+		if (skill.name == "Dashing Strike" && elem > 0 && elem < 3) { 		result *= ((1+(0.12*skills[21].level + 0.12*skills[24].level + 0.12*skills[28].level)) * (1+character.mDamage/100)) }
 		
 	return result
 	},

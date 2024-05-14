@@ -3829,7 +3829,7 @@ function getWeaponDamage(str, dex, group, thrown) {
 	var phys_min = (base_min * (1+e_damage/100) + c.damage_min + c.level*c.min_damage_per_level - phys_min_other);
 	var phys_max = (base_max * (1+(e_damage+(c.level*c.e_max_damage_per_level))/100) + c.damage_max + c.level*c.max_damage_per_level - phys_max_other);
 	var phys_mult = (1+statBonus+(c.damage_bonus+weapon_skillup)/100);
-//	if (c.skillName == "Shock Wave") {var phys_mult = (1+statBonus+((c.damage_bonus+(.25*c.edamage)-(c.edamage/100))+weapon_skillup)/100);}
+//	if (c.skillName == "Shock Wave") {var phys_mult = (1+statBonus+((c.damage_bonus-(1+e_damage/100)-(1+e_damage/100))+weapon_skillup)/100);}
 //	else {var phys_mult = (1+statBonus+(c.damage_bonus+weapon_skillup)/100)}
 	if (phys_max < phys_min) { phys_max = phys_min + 1 };
 	var values = [phys_min, phys_max, phys_mult];

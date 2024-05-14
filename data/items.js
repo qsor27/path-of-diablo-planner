@@ -1131,12 +1131,12 @@ var unequipped = {			strength:0, dexterity:0, vitality:0, energy:0, life:0, mana
 //	{debug:1, name:"Party Fanat 10", e_damage:70, ias:30, ar:85},
 //	{debug:1, name:"Party Fanat 15", e_damage:95, ias:33, ar:110},
 //	{debug:1, name:"Party Fanat 20", e_damage:120, ias:35, ar:135},
-	{debug:1, name:"+10 ed", req_level:100, e_damage:10},
-	{debug:1, name:"+50 ed", req_level:100, e_damage:50},
-	{debug:1, name:"+100 ed", req_level:100, e_damage:100},
-	{debug:1, name:"-10 ed", req_level:100, e_damage:-10},
-	{debug:1, name:"-50 ed", req_level:100, e_damage:-50},
-	{debug:1, name:"-100 ed", req_level:100, e_damage:-100},
+	{debug:1, name:"+10 on-weapon ed", req_level:100, e_damage:10},
+	{debug:1, name:"+50 on-weapon ed", req_level:100, e_damage:50},
+	{debug:1, name:"+100 on-weapon ed", req_level:100, e_damage:100},
+	{debug:1, name:"-10 on-weapon ed", req_level:100, e_damage:-10},
+	{debug:1, name:"-50 on-weapon ed", req_level:100, e_damage:-50},
+	{debug:1, name:"-100 on-weapon ed", req_level:100, e_damage:-100},
 ],
 	};
 	

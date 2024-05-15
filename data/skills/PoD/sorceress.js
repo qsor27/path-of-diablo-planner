@@ -142,7 +142,7 @@ var character_sorceress = {class_name:"Sorceress", strength:10, dexterity:25, vi
 	//	else if (skill.name == "Static Field") {	attack = 0; spell = 2; }
 		else if (skill.name == "Fire Bolt") {		attack = 0; spell = 1; fDamage_min = character.getSkillData(skill,lvl,0); fDamage_max = character.getSkillData(skill,lvl,1); }
 	//	else if (skill.name == "Blaze") {			attack = 0; spell = 1; fDamage_min = character.getSkillData(skill,lvl,1); fDamage_max = character.getSkillData(skill,lvl,2); }
-		else if (skill.name == "Inferno") {			attack = 0; spell = 1; fDamage_min = character.getSkillData(skill,lvl,1); fDamage_max = character.getSkillData(skill,lvl,2); }
+		else if (skill.name == "Inferno") {			attack = 0; spell = 1; fDamage_min = character.getSkillData(skill,lvl,0); fDamage_max = character.getSkillData(skill,lvl,1); }
 		else if (skill.name == "Immolate") {		attack = 0; spell = 1; fDamage_min = character.getSkillData(skill,lvl,0); fDamage_max = character.getSkillData(skill,lvl,1); }
 		else if (skill.name == "Fire Ball") {		attack = 0; spell = 1; fDamage_min = character.getSkillData(skill,lvl,0); fDamage_max = character.getSkillData(skill,lvl,1); }
 		else if (skill.name == "Fire Wall") {		attack = 0; spell = 1; fDamage_min = character.getSkillData(skill,lvl,0); fDamage_max = character.getSkillData(skill,lvl,1); }

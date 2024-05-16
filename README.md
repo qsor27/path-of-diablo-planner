@@ -2,6 +2,7 @@
 
 ### Getting started with Planner editing
 Quick tour of the files within thie project: https://youtu.be/0GXcUw0btrA
+Adding a few runewords: https://youtu.be/_WvS_m0Co2A 
 
 ### Features:
 * all skill info up to level 60 & synergy calculations

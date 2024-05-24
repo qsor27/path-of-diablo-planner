@@ -86,8 +86,42 @@ This planner is open-source, so improvements can be contributed by anyone throug
 
 ### Getting started with Planner editing
 Quick tour of the files within thie project: https://youtu.be/0GXcUw0btrA
+#### Files and folders
+Folders in the project include data, images, and saves. 
+* Saves contains old save files, likely of little or no use
+* Images contains pictures used in the panner web page, from weapons and armor to skill trees and icons. If a skill or skill tree changes, pictures in here would need to be updated.
+* Data folder contains the most interesting/relevant files in regards to editing the planner:
+    * basic_variables: includes some basic variables like font colors, list of oskills, charge skills & CTC skills, and some shrine mercenary and aura info
+    * functions: the meat of the program, this is the brains of the planner
+    * item_metadata: rune makeup of runewords, all base items in the game and their stats, includes details about, and formats appearance of, all stats/modifiers/properties you see in the planner. If you see text on an item, that text you see is formatted in this file.
+    * items: includes default stat values, lists all skills, lists all items available in the planners drop down menu's, the sockets and corruptions available, charms, and socketables. If an item changes in any way, this is likely where the change would be made.
+    * the skills subfolder, which includes a file for every classes skills and a file for "universal" skills, think ball lightning or any skill that's an oskill or universally available. If a skill were to get changed, this is where those changes would happen.
+        * class js files include
+            * starting class data, like attributes and breakpoints
+            * skills with their narrative descriptions, prereqs, synergies, and other data
+            * several equations/formulas to calculate buff values like frw or added defense or other non-damage data, and direct skill damage that includes synergy and other bonuses
+            * comma separated lists of numbers for each skill. These lists represent things like min or max damage, radius, and mana cost, same as you'r see in the wiki's damage tables.
+* Files used less or not at all, or files that won't need regular changes include:
+    * index.html: only really needed if adding elements to the web page itself, not for content in the planner
+    * license file
+    * cname: should not be changed
+    * to-do list: this can probably get deleted unless folks decide to actually use it as a to-do list
+    * style.css
+    * monsters.js: it's unused
+    * all the spreadsheets and vanilla skill files: these are not used
 
+#### Sample item changes
+* If an item or runeword had a change from 30 IAS to 45 IAS, we'd find that item(or items) in the items file, and change it's property ias:30 to ias:45
+* If the corruptions available to an item change, the new corruptions would have to replace the old curruptions in item.js
+To add a new runeword:
+* Define the runeword and the runes that make it in item_metadata
+* Create the new runeword in items.js, using an existing similar runeword as a template or example is the easiest way
+    * In the approriate section (ie, stay organized and don't add helmets in the middle of the weapons list) add the runeword by name, and add all of the properties it has with the appropriate values of those properties. If the property is a range, such as "10-15 fire resistance, the standard has been to add the highest value, so fres:15 for this example. (This assumes the property in question already exists, if that's not the case then the proprty will need to be defined in item_metadata before it can be assigned to an item. See Warlords Trust for an example. In this example "fres", or fire resistance, as a property is already defined in the item_metadata file.)
+* Runewords can be added using any appropriate base you'd like, base items are defined in item_metadata
 Adding a few runewords: https://youtu.be/_WvS_m0Co2A 
+
+#### Sample Skill changes
+* If a skill is changed, fine the skill in the appropriate file (changes to freezing pulse would be made in the sorceress.js file for example) and make changes there. 
 
 ### Credits:
 

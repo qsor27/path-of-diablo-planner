@@ -148,7 +148,7 @@ function changeLevel(event, input) {
 	if (event != null) {
 		if (event.shiftKey) { levels = 10 }
 		if (event.ctrlKey) { levels = 100 }
-	}
+	} 
 	if (input < 0) {
 		if (levels > character.level-1) { levels = (character.level-1) }
 		if (levels > character.skillpoints) { levels = character.skillpoints }
@@ -2272,6 +2272,7 @@ function getCharacterInfo() {
 	charInfo += ",settings:{coupling:"+settings.coupling+",autocast:"+settings.autocast
 	charInfo += "},ironGolem:"+golemItem.name
 	charInfo += "}"
+//	document.getElementById("fhr_bp").innerHTML = charInfo.fhr_bp
 	return charInfo
 }
 
@@ -4197,6 +4198,14 @@ function updateSecondaryStats() {
 	document.getElementById("enemy_lres").innerHTML = c.enemy_lRes; if (c.enemy_lRes < 0) { document.getElementById("enemy_lres").innerHTML += "%" }
 	document.getElementById("enemy_pres").innerHTML = c.enemy_pRes; if (c.enemy_pRes < 0) { document.getElementById("enemy_pres").innerHTML += "%" }
 	document.getElementById("enemy_mres").innerHTML = c.enemy_mRes; if (c.enemy_mRes < 0) { document.getElementById("enemy_mres").innerHTML += "%" }
+
+	if (character.class_name != "Druid"){document.getElementById("fhr_bp").innerHTML = c.fhr_bp}
+	else if (character.class_name == "Druid") {document.getElementById("fhr_bp").innerHTML = "1-hand swing FHR: " + c.fhr_bp_alt + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All other weapon FHR: " + c.fhr_bp + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Werebear FHR: " + c.fhr_bp_werebear + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Werewolf FHR: " + c.fhr_bp_werewolf}
+	if (character.class_name == "Amazon"||"Assassin"||"Barbarian"||"Paladin"||"Necromancer"){document.getElementById("fcr_bp").innerHTML = c.fcr_bp}
+	if (character.class_name == "Druid") {document.getElementById("fcr_bp").innerHTML = c.fcr_bp + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Werebear FCR: " + c.fcr_bp_werebear + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Werewolf FCR: " + c.fcr_bp_werewolf}
+	if (character.class_name == "Sorceress") {document.getElementById("fcr_bp").innerHTML = c.fcr_bp + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Light/Chain Light FCR: " + c.fcr_bp_alt}
+	//	if (c.fhr_bp_alt)	{document.getElementById("fhr_bp").innerHTML = c.fhr_bp + "<br>" + "1-hand swing FHR: " + c.fhr_bp_alt}
+//	else{document.getElementById("fhr_bp").innerHTML = c.fhr_bp}
 }
 
 // updateTertiaryStats - Updates other stats
@@ -4588,7 +4597,7 @@ function checkSkill(skillName, num) {
 		for (let i = 1; i < c.fcr_bp_alt.length; i++) { if (fcrTotal >= c.fcr_bp_alt[i]) { fcr_f -= 1 } }
 		document.getElementById("ar_skill"+num).innerHTML = "Cast Rate: "+fcr_f+" frames"
 	}
-	
+	 
 	updateSkills()
 }
 

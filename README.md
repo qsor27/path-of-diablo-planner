@@ -1,10 +1,5 @@
 ## Planner for Character Builds in Path of Diablo
 
-### Getting started with Planner editing
-Quick tour of the files within thie project: https://youtu.be/0GXcUw0btrA
-
-Adding a few runewords: https://youtu.be/_WvS_m0Co2A 
-
 ### Features:
 * all skill info up to level 60 & synergy calculations
 * charm inventory
@@ -88,6 +83,11 @@ This planner is open-source, so improvements can be contributed by anyone throug
 * Create a [fork](https://github.com/GreenDude120/path-of-diablo-planner/fork) (duplicate) of this repository
 * Edit the files
 * Submit a pull request (i.e. request your changes be pulled into this version)
+
+### Getting started with Planner editing
+Quick tour of the files within thie project: https://youtu.be/0GXcUw0btrA
+
+Adding a few runewords: https://youtu.be/_WvS_m0Co2A 
 
 ### Credits:
 

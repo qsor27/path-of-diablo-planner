@@ -94,7 +94,9 @@ var character_any = {
 //		if (skillName == "DangoonChain Proc"  && elem < 2) {		result *= lvl += character.skills_lightning_all }
 	// Barbarian
 		if (skillName == "Battle Command" && elem == 0) {			result = 1 }
-	// Druid
+		if (skillName == "Whirling Axes" && elem == 2) {			result = skill.data.values[2][lvl] }
+
+		// Druid
 		if (skillName == "Flame Dash" && elem == 0) {				result = 8 }
 		if (skillName == "Flame Dash" && elem < 3 && elem > 0) {	result *= ((1 + 0.01*(character.energy + character.all_attributes)*(1+character.max_energy/100)) * (1+character.fDamage/100)) }
 		if (skillName == "Werewolf" && elem == 0) {					result = (10 + sk[12].data.values[1][lycan_lvl]) }
@@ -199,6 +201,7 @@ var character_any = {
 		}
 		if (skill.name == "Concentration") { result.ar = skill.data.values[0][lvl]; result.damage_bonus = skill.data.values[1][lvl]; result.hammer_bonus = skill.data.values[2][lvl]; result.radius = 16; }
 
+		if (skill.name == "Whirling Axes") { result.chance = skill.data.values[2][lvl]}
 		return result
 	},
 
@@ -253,7 +256,9 @@ var character_any = {
 		else if (skillName == "Meteor") {			attack = 0; spell = 1; lvl += character.skills_fire_all; damage_min = character_any.getSkillData(skillName,lvl,0); damage_max = character_any.getSkillData(skillName,lvl,1); fDamage_min = character_any.getSkillData(skillName,lvl,2); fDamage_max = character_any.getSkillData(skillName,lvl,3); }
 		else if (skillName == "Hydra") {			attack = 0; spell = 1; lvl += character.skills_fire_all; fDamage_min = character_any.getSkillData(skillName,lvl,1); fDamage_max = character_any.getSkillData(skillName,lvl,2); }
 		else if (skillName == "Whirlwind") {		attack = 1; spell = 0; ar_bonus = character_any.getSkillData(skillName,lvl,1); damage_bonus = character_any.getSkillData(skillName,lvl,0); }
-	//	else if (skillName == "Discharge") {		attack = 0; spell = 1; lvl += character.skills_lightning_all; lDamage_min = character_any.getSkillData(skillName,lvl,1); lDamage_max = character_any.getSkillData(skillName,lvl,2); } 
+		else if (skillName == "Whirling Axes") {	attack = 1; spell = 0; damage_min = character_any.getSkillData(skillName,lvl,0); damage_max = character_any.getSkillData(skillName,lvl,1); }
+		
+		//	else if (skillName == "Discharge") {		attack = 0; spell = 1; lvl += character.skills_lightning_all; lDamage_min = character_any.getSkillData(skillName,lvl,1); lDamage_max = character_any.getSkillData(skillName,lvl,2); } 
 	//	TODO: check weapon requirements (only conflict would be a Passion bow, which grants Bash & Zeal...) & werewolf/werebear requirements
 		if (skillName == "Feral Rage") {
 			var match = 0;

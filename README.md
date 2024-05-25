@@ -113,12 +113,16 @@ Folders in the project include data, images, and saves.
 #### Sample item changes
 * If an item or runeword had a change from 30 IAS to 45 IAS, we'd find that item(or items) in the items file, and change it's property ias:30 to ias:45
 * If the corruptions available to an item change, the new corruptions would have to replace the old curruptions in item.js
+
 To add a new runeword:
 * Define the runeword and the runes that make it in item_metadata
 * Create the new runeword in items.js, using an existing similar runeword as a template or example is the easiest way
     * In the approriate section (ie, stay organized and don't add helmets in the middle of the weapons list) add the runeword by name, and add all of the properties it has with the appropriate values of those properties. If the property is a range, such as "10-15 fire resistance, the standard has been to add the highest value, so fres:15 for this example. (This assumes the property in question already exists, if that's not the case then the proprty will need to be defined in item_metadata before it can be assigned to an item. See Warlords Trust for an example. In this example "fres", or fire resistance, as a property is already defined in the item_metadata file.)
 * Runewords can be added using any appropriate base you'd like, base items are defined in item_metadata
+
 Adding a few runewords: https://youtu.be/_WvS_m0Co2A 
+
+Adding Whirling Axes changes for Warlords Trust: https://youtu.be/f8X2HfnS6Lc 
 
 #### Sample Skill changes
 * If a skill is changed, fine the skill in the appropriate file (changes to freezing pulse would be made in the sorceress.js file for example) and make changes there. 

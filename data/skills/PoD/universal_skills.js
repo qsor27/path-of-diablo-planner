@@ -213,7 +213,13 @@ var character_any = {
 	// ---------------------------------
 	getSkillDamage : function(skillName, ar, phys_min, phys_max, phys_mult, nonPhys_min, nonPhys_max) {
 		var nameMod = "oskill_"+skillName.split(" ").join("_");
+		var ctcname = "CTC"
+		if (nameMod.includes(ctcname)){
+			var lvl = ~~character[nameMod] + Math.ceil(character.all_skills_per_level*character.level);
+		}
+		if (!nameMod.includes(ctcname)){
 		var lvl = ~~character[nameMod] + character.all_skills + Math.ceil(character.all_skills_per_level*character.level);
+		}
 		var ar_bonus = 0; var damage_bonus = 0; var weapon_damage = 100;
 		var damage_min = 0; var damage_max = 0;
 		var fDamage_min = 0; var fDamage_max = 0;

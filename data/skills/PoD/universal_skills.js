@@ -151,7 +151,7 @@ var character_any = {
 	if (skillName == "CTC Nova Proc" && elem < 2) { 		result *= ((1 + (0.03*skills_all["sorceress"][18].level)) * (1+character.lDamage/100)) }
 
 	if (skillName == "Discharge") {		attack = 0; spell = 1; lDamage_min = character.getSkillData(skill,lvl,1); lDamage_max = character.getSkillData(skill,lvl,2); }
-		
+	
 	return result
 	},
 
@@ -201,7 +201,7 @@ var character_any = {
 		}
 		if (skill.name == "Concentration") { result.ar = skill.data.values[0][lvl]; result.damage_bonus = skill.data.values[1][lvl]; result.hammer_bonus = skill.data.values[2][lvl]; result.radius = 16; }
 
-		if (skill.name == "Whirling Axes") { result.chance = skill.data.values[2][lvl]}
+		if (skill.name == "Whirling Axes") { result.whirlychance = skill.data.values[2][lvl]}
 		return result
 	},
 

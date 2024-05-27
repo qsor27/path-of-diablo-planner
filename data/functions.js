@@ -1623,6 +1623,7 @@ function setEffectData(origin, name, num, other) {
 		if (id == "Frigerate" || id == "Shiver_Armor" || id == "Cold_Mastery") { lvl += character.skills_cold_all }
 		if (id == "Fire_Mastery" || id == "Flame_Dash" || id == "Fire_Ball" || id == "Fire_Wall" || id == "Meteor" || id == "Hydra") { lvl += character.skills_fire_all }
 		if (id == "Desecrate") { lvl += character.skills_poison_all }
+//		if (id == "Whirling Axes") { totalwhirly += whirlychance }
 	}
 	else if (origin == "misc") { data = getMiscData(name,num); }
 	else if (origin == "cskill") { data = getCSkillData(name,num,other) }
@@ -4198,6 +4199,13 @@ function updateSecondaryStats() {
 	document.getElementById("enemy_lres").innerHTML = c.enemy_lRes; if (c.enemy_lRes < 0) { document.getElementById("enemy_lres").innerHTML += "%" }
 	document.getElementById("enemy_pres").innerHTML = c.enemy_pRes; if (c.enemy_pRes < 0) { document.getElementById("enemy_pres").innerHTML += "%" }
 	document.getElementById("enemy_mres").innerHTML = c.enemy_mRes; if (c.enemy_mRes < 0) { document.getElementById("enemy_mres").innerHTML += "%" }
+
+//	document.getElementById("totalwhirly").innerHTML = totalwhirly
+//	document.getElementById("whirlychance").innerHTML = whirlychance
+//	document.getElementById("whirlychance").innerHTML = c.whirlychance; if (c.whirlychance > 0) { document.getElementById("whirlychance").innerHTML += "%" }
+//	document.getElementById("added_whirlychance").innerHTML = c.added_whirlychance; if (c.added_whirlychance > 0) { document.getElementById("added_whirlychance").innerHTML += "%" }
+	if (c.added_whirlychance > 0 || c.whirlychance > 0){ c.totalwhirly = (c.added_whirlychance + c.whirlychance)}
+	document.getElementById("totalwhirly").innerHTML = c.totalwhirly; if (c.totalwhirly > 0) { document.getElementById("totalwhirly").innerHTML += "%" }
 
 	if (character.class_name != "Druid"){document.getElementById("fhr_bp").innerHTML = c.fhr_bp}
 	else if (character.class_name == "Druid") {document.getElementById("fhr_bp").innerHTML = "1-hand swing FHR: " + c.fhr_bp_alt + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All other weapon FHR: " + c.fhr_bp + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Werebear FHR: " + c.fhr_bp_werebear + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Werewolf FHR: " + c.fhr_bp_werewolf}

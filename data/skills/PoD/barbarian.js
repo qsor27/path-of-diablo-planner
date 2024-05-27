@@ -67,7 +67,7 @@ var character_barbarian = {class_name:"Barbarian", strength:30, dexterity:20, vi
 		if (skill.name == "Taunt") { result.enemy_damage = skill.data.values[0][lvl]; result.enemy_attack = skill.data.values[1][lvl]; }	// duration unlisted
 		if (skill.name == "Battle Cry") { result.duration = skill.data.values[0][lvl]; result.enemy_defense = skill.data.values[1][lvl]; result.enemy_damage = skill.data.values[2][lvl]; }
 		if (skill.name == "Grim Ward") { result.duration = skill.data.values[0][lvl]; result.radius = skill.data.values[1][lvl]; result.enemy_physRes = skill.data.values[2][lvl]; }
-		if (skill.name == "Whirling Axes") { result.chance = skill.data.values[2][lvl]; }
+		if (skill.name == "Whirling Axes") { result.whirlychance = skill.data.values[2][lvl]; }
 		return result
 	},
 	
@@ -233,7 +233,7 @@ var character_barbarian = {class_name:"Barbarian", strength:30, dexterity:20, vi
 /*[19] Whirling Axes		*/ var d262 = {values:[
 		["damage min",11,16,22,27,32,37,42,48,55,63,71,79,87,94,102,110,122,133,145,157,169,180,195,209,223,237,252,266,286,305,325,344,364,383,403,422,442,461,481,500,520,539,559,578,598,617,637,656,676,695,715,734,754,773,793,812,832,851,871,890,], 
 		["damage max",19,26,32,39,45,52,58,65,75,85,96,106,117,127,137,148,163,179,195,210,226,241,260,278,296,314,332,351,374,397,421,444,468,491,514,538,561,585,608,631,655,678,702,725,748,772,795,819,842,865,889,912,936,959,982,1006,1029,1053,1076,1099,], 
-		["chance",4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100,102,104,106,108,110,112,114,116,118,120,122,], 
+		["whirlychance",4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100,102,104,106,108,110,112,114,116,118,120,122,], 
 ]};
 /*[20]Natural Resistance*/ var d263 = {values:[
 		["resistances",11,20,27,33,37,41,44,46,49,51,53,54,56,57,58,60,60,61,62,63,63,64,65,65,66,66,67,67,68,68,69,69,69,69,69,70,70,71,71,71,71,72,72,72,72,72,72,72,73,73,73,73,73,74,74,74,74,74,74,75,], 

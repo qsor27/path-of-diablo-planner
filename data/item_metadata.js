@@ -1432,7 +1432,10 @@ frenzy_duration:{index:["frenzy_duration"], format:["+"," Seconds to Frenzy Dura
 thrown_cstrike:{index:["thrown_cstrike"], format:["+","% Critical Strike"]},
 owounds_duration:{index:["owounds_duration"], format:["Wound Bleed Duration +"," seconds"]},
 counterattack:{index:["counterattack"], format:["","% chance to counterattack"]},
-whirlychance:{index:["whirlychance"], format:["","% added chance to release Whirling Axes"]},
+added_whirlychance:{index:["added_whirlychance"], format:["","% added chance to release Whirling Axes"]},
+whirlychance:{index:["whirlychance"], format:["","% chance to release Whirling Axes"]},
+totalwhirly:{index:["totalwhirly"], format:["","% chance to release Whirling Axes"]},
+
 pulverize:{index:["pulverize"], format:["","% chance to pulverize"]},
 charge_tiger:{index:["charge_tiger"], format:[""," Tiger Charges"]},
 charge_cobra:{index:["charge_cobra"], format:[""," Cobra Charges"]},

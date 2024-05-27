@@ -4207,11 +4207,11 @@ function updateSecondaryStats() {
 	if (c.added_whirlychance > 0 || c.whirlychance > 0){ c.totalwhirly = (c.added_whirlychance + c.whirlychance)}
 	document.getElementById("totalwhirly").innerHTML = c.totalwhirly; if (c.totalwhirly > 0) { document.getElementById("totalwhirly").innerHTML += "%" }
 
-	if (character.class_name != "Druid"){document.getElementById("fhr_bp").innerHTML = c.fhr_bp}
-	else if (character.class_name == "Druid") {document.getElementById("fhr_bp").innerHTML = "1-hand swing FHR: " + c.fhr_bp_alt + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All other weapon FHR: " + c.fhr_bp + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Werebear FHR: " + c.fhr_bp_werebear + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Werewolf FHR: " + c.fhr_bp_werewolf}
-	if (character.class_name == "Amazon"||"Assassin"||"Barbarian"||"Paladin"||"Necromancer"){document.getElementById("fcr_bp").innerHTML = c.fcr_bp}
-	if (character.class_name == "Druid") {document.getElementById("fcr_bp").innerHTML = c.fcr_bp + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Werebear FCR: " + c.fcr_bp_werebear + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Werewolf FCR: " + c.fcr_bp_werewolf}
-	if (character.class_name == "Sorceress") {document.getElementById("fcr_bp").innerHTML = c.fcr_bp + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Light/Chain Light FCR: " + c.fcr_bp_alt}
+	if (character.class_name != "Druid"){document.getElementById("fhr_bp").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + c.fhr_bp}
+	else if (character.class_name == "Druid") {document.getElementById("fhr_bp").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1-hand swing: " + c.fhr_bp_alt + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All other weapon: " + c.fhr_bp + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Werebear: " + c.fhr_bp_werebear + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Werewolf: " + c.fhr_bp_werewolf}
+	if (character.class_name == "Amazon"||"Assassin"||"Barbarian"||"Paladin"||"Necromancer"){document.getElementById("fcr_bp").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + c.fcr_bp}
+	if (character.class_name == "Druid") {document.getElementById("fcr_bp").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + c.fcr_bp + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Werebear: " + c.fcr_bp_werebear + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Werewolf: " + c.fcr_bp_werewolf}
+	if (character.class_name == "Sorceress") {document.getElementById("fcr_bp").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + c.fcr_bp + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Light/Chain Light: " + c.fcr_bp_alt}
 	//	if (c.fhr_bp_alt)	{document.getElementById("fhr_bp").innerHTML = c.fhr_bp + "<br>" + "1-hand swing FHR: " + c.fhr_bp_alt}
 //	else{document.getElementById("fhr_bp").innerHTML = c.fhr_bp}
 }

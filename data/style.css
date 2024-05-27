@@ -643,18 +643,23 @@ input[type="file"] {
   left: 0px;
 }
 .stat-2 {
-  left: 170px;
+  left: 180px;
 }
 .stat-3 {
-  left: 0px;
+  left: 925px;
+  top: -650px;
+  width: 300px;
 }
 .stat-4 {
   left: 195px;
 }
 .stat-5 {
-  left: 340px;
+  left: 310px;
 }
 .stat-6 {
+  left: 510px;
+}
+.stat-7 {
   left: 510px;
 }
 #stats_positioning_alignment {
@@ -694,4 +699,8 @@ input[type="file"] {
 }
 .newstatright{
   margin-right: -275;
+}
+#stats_column_6 {
+  float: right;
+  width: 195px;
 }

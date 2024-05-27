@@ -1150,6 +1150,7 @@ var unequipped = {			strength:0, dexterity:0, vitality:0, energy:0, life:0, mana
 	{debug:1, name:"+5% magic", req_level:100, mDamage:5},
 	{debug:1, name:"+10% magic", req_level:100, mDamage:10},
 	{debug:1, name:"+20% magic", req_level:100, mDamage:20},
+	{debug:1, name:"Beast on Swap", oskill_Werebear:3, oskill_Lycanthropy:3},
 	{debug:1, name:"CTA on Swap", oskill_Battle_Cry:4, oskill_Battle_Orders:6, oskill_Battle_Command:6},
 	{debug:1, name:"BO buff lvl 20", oskill_Battle_Orders:20},
 	{debug:1, name:"BO buff lvl 40", oskill_Battle_Orders:40},

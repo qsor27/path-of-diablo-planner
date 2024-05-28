@@ -29,7 +29,7 @@ https://build.pathofdiablo.com/?v=2&class=sorceress&level=99&quests=1&strength=4
 * Displayed damage is incorrect for skills that care about on vs off weapon ED, added minus ED
 charms to compensate
 * ~~Barb combat skills remain "red" even when prerequisites are met~~ This has been fixed, barb combat tree rewritten to properly apply prerequisites. Please report if you see otherwise.
-* "+1 (each) skills" charm isn't applied to some skills
+* ~~"+1 (each) skills" charm isn't applied to some skills~~
 * Charms can't be moved into a new space below the original space if those spaces overlap
 * Shift + Right Click in Firefox doesn't work (and still opens the default menu)
 * Socketed gems/runes/jewels sometimes aren't aligned like they should be

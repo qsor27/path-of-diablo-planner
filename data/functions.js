@@ -4172,6 +4172,9 @@ function updateSecondaryStats() {
 	document.getElementById("dstrike").innerHTML = c.dstrike + Math.floor(c.level*c.dstrike_per_level); if (c.dstrike > 0 || c.dstrike_per_level > 0) { document.getElementById("dstrike").innerHTML += "%" }
 	document.getElementById("cstrike").innerHTML = c.cstrike + c.cstrike_skillup; if (c.cstrike > 0 || c.cstrike_skillup > 0) { document.getElementById("cstrike").innerHTML += "%" }
 	document.getElementById("owounds").innerHTML = c.owounds; if (c.owounds > 0) { document.getElementById("owounds").innerHTML += "%" }
+
+	document.getElementById("damage_reduced").innerHTML = c.damage_reduced; if (c.damage_reduced > 0) { document.getElementById("damage_reduced")}
+	document.getElementById("mDamage_reduced").innerHTML = c.mDamage_reduced; if (c.mDamage_reduced > 0) { document.getElementById("mDamage_reduced")}
 	
 	var mf = Math.floor(c.mf + c.level*c.mf_per_level);
 	var eMF = Math.floor(mf*250/(mf+250));

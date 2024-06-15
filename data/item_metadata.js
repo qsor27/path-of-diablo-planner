@@ -1303,6 +1303,7 @@ skill_Thunder_Storm:{index:["skill_Thunder_Storm"], format:["+"," to Thunder Sto
 skill_Fire_Bolt:{index:["skill_Fire_Bolt"], format:["+"," to Fire Bolt (Sorceress only)"]},
 skill_Warmth:{index:["skill_Warmth"], format:["+"," to Warmth (Sorceress only)"]},
 skill_Blaze:{index:["skill_Blaze"], format:["+"," to Blaze (Sorceress only)"]},
+skill_Inferno:{index:["skill_Inferno"], format:["+"," to Inferno (Sorceress only)"]},
 skill_Immolate:{index:["skill_Immolate"], format:["+"," to Immolate (Sorceress only)"]},
 skill_Fire_Ball:{index:["skill_Fire_Ball"], format:["+"," to Fire Ball (Sorceress only)"]},
 skill_Fire_Wall:{index:["skill_Fire_Wall"], format:["+"," to Fire Wall (Sorceress only)"]},

@@ -846,7 +846,8 @@ var unequipped = {			strength:0, dexterity:0, vitality:0, energy:0, life:0, mana
 	{name:"Spire of Honor", req_level:39, skills_combat_paladin:3, e_damage:200, damage_min:20, damage_max:40, damage_vs_demons_per_level:1.5, fhr:20, life_replenish:20, ar_bonus:25, defense_bonus:25, light_radius:3, twoHanded:1, type:"spear", base:"Lance", img:"Spire_of_Honor"},
 	{name:"Arioc's Needle", req_level:81, all_skills:4, e_damage:230, dstrike:50, pDamage_all:394, pDamage_duration:10, ias:30, itd:1, twoHanded:1, type:"spear", base:"Hyperion Spear"},
 	{name:"Viperfork", req_level:71, ctc:[[9,16,"Desecrate","on attack"]], e_damage:240, ar:250, pDamage_all:325, pDamage_duration:5, ias:50, pRes:50, pRes_max:7, twoHanded:1, type:"spear", base:"Mancatcher", pod_changes:1, img:"Viperfork"},
-	{name:"Steel Pillar", req_level:69, e_damage:270, cblow:25, target_defense:-50, ias:25, defense_bonus:80, damage_reduced:32, indestructible:1, ethereal:0, twoHanded:1, type:"spear", base:"War Pike"},
+	{name:"Steel Pillar", req_level:69, e_damage:310, cblow:25, target_defense:-50, defense_bonus:80, damage_reduced:40, ethereal:0, twoHanded:1, type:"spear", base:"War Pike"},
+//	{name:"Steel Pillar", req_level:69, e_damage:270, cblow:25, target_defense:-50, ias:25, defense_bonus:80, damage_reduced:32, indestructible:1, ethereal:0, twoHanded:1, type:"spear", base:"War Pike"},
 	// Javelins
 	{name:"Demon's Arch", req_level:68, e_damage:210, fDamage_min:232, fDamage_max:323, lDamage_min:23, lDamage_max:333, ias:30, life_leech:12, autoreplenish:1, type:"javelin", base:"Balrog Spear", img:"Demon's_Arch"},
 	{name:"Wraith Flight", req_level:76, e_damage:190, life_leech:13, mana_per_kill:15, autoreplenish:1, ethereal:1, type:"javelin", base:"Ghost Glaive", img:"Wraith_Flight"},

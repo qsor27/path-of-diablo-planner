@@ -4057,6 +4057,32 @@ function updatePrimaryStats() {
 		if (offhandType != "weapon") {
 			document.getElementById("ias").innerHTML += " ("+frames_per_attack+" fpa)"
 		}
+
+		if (effects["Werebear"] != null || effects["Werewolf"] != null ) {	
+			if (equipped.armor.ias > 1) {armorias = equipped.armor.ias}		
+				else {armorias = 0}	
+			if (equipped.helm.ias > 1) {helmias = equipped.helm.ias}		
+				else {helmias = 0}	
+			if (equipped.amulet.ias > 1) {amuletias = equipped.amulet.ias}		
+				else {amuletias = 0}	
+			if (equipped.belt.ias > 1) {beltias = equipped.belt.ias}		
+				else {beltias = 0}	
+			if (equipped.ring1.ias > 1) {ring1ias = equipped.ring1.ias}		
+				else {ring1ias = 0}	
+			if (equipped.ring2.ias > 1) {ring2ias = equipped.ring2.ias}		
+				else {ring2ias = 0}	
+			if (equipped.boots.ias > 1) {bootsias = equipped.boots.ias}		
+				else {bootsias = 0}	
+			if (equipped.gloves.ias > 1) {glovesias = equipped.gloves.ias}		
+				else {glovesias = 0}	
+			offwepias = armorias + helmias + amuletias + beltias + ring1ias + ring2ias + bootsias + glovesias
+			wias = ias - offwepias
+			document.getElementById("wias_label").style.visibility = "visible"
+			document.getElementById("wias").innerHTML = wias + "<br>"
+		} else {
+			document.getElementById("wias_label").style.visibility = "hidden"
+			document.getElementById("wias").innerHTML = ""
+		}	
 	}
 	if (c.flamme > 0) { document.getElementById("flamme").innerHTML = "Righteous Fire deals "+Math.floor((c.flamme/100*lifeTotal)*(1+c.fDamage/100))+" damage per second<br>" } else { document.getElementById("flamme").innerHTML = "" }
 } 

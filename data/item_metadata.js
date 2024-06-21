@@ -91,6 +91,7 @@ var runewords = {
 	Temper:["Shael","Io","Ral"],
 	Wisdom:["Pul","Ith","Eld"],
 	Unbending_Will:["Fal","Io","Ith","Eld","El","Hel"],
+	Obsession:["Zod","Ist","Lem","Lum","Io","Nef"],
 };
 
 /* automods = 

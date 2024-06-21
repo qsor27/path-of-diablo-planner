@@ -4057,7 +4057,9 @@ function updatePrimaryStats() {
 		if (offhandType != "weapon") {
 			document.getElementById("ias").innerHTML += " ("+frames_per_attack+" fpa)"
 		}
-
+		// This adds the on-weapon ias stat, not the best way to do it but it adds up ias from all equipped items except weapon
+		// and subtracts that from the total ias. I couldn't figure out how to get just the on weapon ias plus ias from sockets
+		// so i took everything else and removed it from the total. 
 		if (effects["Werebear"] != null || effects["Werewolf"] != null ) {	
 			if (equipped.armor.ias > 1) {armorias = equipped.armor.ias}		
 				else {armorias = 0}	

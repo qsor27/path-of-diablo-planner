@@ -4236,8 +4236,17 @@ function updateSecondaryStats() {
 //	document.getElementById("whirlychance").innerHTML = whirlychance
 //	document.getElementById("whirlychance").innerHTML = c.whirlychance; if (c.whirlychance > 0) { document.getElementById("whirlychance").innerHTML += "%" }
 //	document.getElementById("added_whirlychance").innerHTML = c.added_whirlychance; if (c.added_whirlychance > 0) { document.getElementById("added_whirlychance").innerHTML += "%" }
-	if (c.added_whirlychance > 0 || c.whirlychance > 0){ c.totalwhirly = (c.added_whirlychance + c.whirlychance)}
-	document.getElementById("totalwhirly").innerHTML = c.totalwhirly; if (c.totalwhirly > 0) { document.getElementById("totalwhirly").innerHTML += "%" }
+	if (c.added_whirlychance > 0 || c.whirlychance > 0){ 
+		c.totalwhirly = (c.added_whirlychance + c.whirlychance);
+		document.getElementById("wa_label").style.visibility = "visible";
+		document.getElementById("totalwhirly").innerHTML = c.totalwhirly; 
+	}
+	else {
+		document.getElementById("wa_label").style.visibility = "hidden"
+		document.getElementById("totalwhirly").innerHTML = ""
+	}
+//	if (c.added_whirlychance > 0 || c.whirlychance > 0){ c.totalwhirly = (c.added_whirlychance + c.whirlychance)}
+//	document.getElementById("totalwhirly").innerHTML = c.totalwhirly; if (c.totalwhirly > 0) { document.getElementById("totalwhirly").innerHTML += "%" }
 
 	if (character.class_name != "Druid"){document.getElementById("fhr_bp").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + c.fhr_bp}
 	else if (character.class_name == "Druid") {document.getElementById("fhr_bp").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1-hand swing: " + c.fhr_bp_alt + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All other weapon: " + c.fhr_bp + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Werebear: " + c.fhr_bp_werebear + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Werewolf: " + c.fhr_bp_werewolf}

@@ -370,6 +370,7 @@ var bases = {	// Note: damage_vs_undead:50 is included for blunt weapons, but ot
 	Legendary_Mallet:{group:"weapon", type:"mace", base_damage_min:50, base_damage_max:61, req_level:61, req_strength:189, durability:65, baseSpeed:20, range:1, max_sockets:4, damage_vs_undead:50, downgrade:"Battle Hammer", subtype:"hammer", tier:3},
 	Ogre_Maul:{group:"weapon", type:"mace", base_damage_min:77, base_damage_max:106, req_level:51, req_strength:225, durability:60, baseSpeed:10, range:1, max_sockets:6, damage_vs_undead:50, downgrade:"War Club", twoHands:1, subtype:"hammer", tier:3},
 	Thunder_Maul:{group:"weapon", type:"mace", base_damage_min:33, base_damage_max:180, req_level:65, req_strength:253, durability:60, baseSpeed:20, range:2, max_sockets:6, damage_vs_undead:50, downgrade:"Martel de Fer", twoHands:1, subtype:"hammer", tier:3},
+	Wirts_Leg:{group:"weapon", type:"mace", base_damage_min:2, base_damage_max:8, durability:24, baseSpeed:0, range:0, max_sockets:3, damage_vs_undead:50, subtype:"mace", tier:3, nonmetal:1},
 	// sword
 	Short_Sword:{group:"weapon", type:"sword", base_damage_min:2, base_damage_max:7, durability:24, baseSpeed:0, range:0, max_sockets:2, upgrade:"Gladius", tier:1},
 	Scimitar:{group:"weapon", type:"sword", base_damage_min:2, base_damage_max:6, req_dexterity:21, durability:22, baseSpeed:-20, range:0, max_sockets:2, upgrade:"Cutlass", tier:1},

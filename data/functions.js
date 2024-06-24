@@ -4276,7 +4276,9 @@ function updateSecondaryStats() {
 			url_num = 6;
 			break;
 	}
-	ias_link = "https://mmmpld.github.io/pod-attack-calc/?c=" + url_num ;
+//	if (offwepias > 0) {ias_link = "https://mmmpld.github.io/pod-attack-calc/?c=" + url_num + "&io=" + offwepias}
+//	else {ias_link = "https://mmmpld.github.io/pod-attack-calc/?c=" + url_num} 
+	ias_link = "https://mmmpld.github.io/pod-attack-calc/?c=" + url_num
 	document.getElementById("ias_url").innerHTML = "<a href=" + ias_link + "  target='_blank' >" + "mmmpld's IAS Calculator" + "</a>" ;
 
 //	document.write("<a href='" + link + "'>" + text + "</a>");

@@ -4253,6 +4253,33 @@ function updateSecondaryStats() {
 	if (character.class_name == "Amazon"||"Assassin"||"Barbarian"||"Paladin"||"Necromancer"){document.getElementById("fcr_bp").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + c.fcr_bp}
 	if (character.class_name == "Druid") {document.getElementById("fcr_bp").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + c.fcr_bp + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Werebear: " + c.fcr_bp_werebear + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Werewolf: " + c.fcr_bp_werewolf}
 	if (character.class_name == "Sorceress") {document.getElementById("fcr_bp").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + c.fcr_bp + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Light/Chain Light: " + c.fcr_bp_alt}
+	switch (character.class_name){
+		case "Amazon":
+			url_num = 0;
+			break;
+		case "Assassin":
+			url_num = 1;
+			break;
+		case "Barbarian":
+			url_num = 2;
+			break;
+		case "Druid":
+			url_num = 3;
+			break;
+		case "Necromancer":
+			url_num = 4;
+			break;
+		case "Paladin":
+			url_num = 5;
+			break;
+		case "Sorceress":
+			url_num = 6;
+			break;
+	}
+	ias_link = "https://mmmpld.github.io/pod-attack-calc/?c=" + url_num ;
+	document.getElementById("ias_url").innerHTML = "<a href=" + ias_link + "  target='_blank' >" + "mmmpld's IAS Calculator" + "</a>" ;
+
+//	document.write("<a href='" + link + "'>" + text + "</a>");
 	//	if (c.fhr_bp_alt)	{document.getElementById("fhr_bp").innerHTML = c.fhr_bp + "<br>" + "1-hand swing FHR: " + c.fhr_bp_alt}
 //	else{document.getElementById("fhr_bp").innerHTML = c.fhr_bp}
 }

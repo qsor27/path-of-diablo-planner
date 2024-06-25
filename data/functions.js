@@ -406,6 +406,15 @@ function toggleAutocast(autocast) {
 	updateURL()
 }
 
+// togglesynthwep - Changes whether adding/removing skill points can affect character level
+//	coupling: name identifier for 'Skill Level Coupling' checkbox element
+// ---------------------------------
+function togglesynthwep(synthwep) {
+	if (synthwep.checked) { settings.synthwep = 1 } else { settings.synthwep = 0 }
+	updateURL()
+	loadItems()
+}
+
 // toggleParameters - Changes whether parameters are shown in the address bar
 //	parameters: name identifier for 'URL Parameters' checkbox element
 // ---------------------------------
@@ -506,6 +515,8 @@ function loadParams() {
 		var param_url = ~~params.get('url');
 		var param_coupling = 1;
 		if (params.has('coupling') == true) { param_coupling = params.get('coupling') }
+		var param_synthwep = 0;
+		if (params.has('synthwep') == true) { param_synthwep = params.get('synthwep') }
 		var param_autocast = 1;
 		if (params.has('autocast') == true) { param_autocast = params.get('autocast') }
 		var param_skills = '0000000000000000000000000000000000000000000000000000000000000000000000';
@@ -1329,6 +1340,10 @@ function loadItems(group, dropdown, className) {
 	else {
 		var choices = "";
 		var choices_offhand = "";
+//			if(synthwep != 0)
+//		{
+//			equipment["weapon"] =+ '{debug:1, name:"Testeroo",req_level:71, e_damage:220, pierce:33, life_leech:18, owounds:33, slows_target:25, twoHanded:1, type:"crossbow", base:"Demon Crossbow", img:"Gut_Siphon"},'
+//		}
 		for (itemNew in equipment[group]) {
 			var item = equipment[group][itemNew];
 			if (typeof(item.only) == 'undefined' || item.only == className) {
@@ -1342,6 +1357,8 @@ function loadItems(group, dropdown, className) {
 				if (halt == 0) {
 					var addon = "";
 					if (choices == "") {
+						if (settings.synthwep == "0" && item.synth_wep == "1") { addon = "" }
+						if (settings.synthwep == "1" && item.synth_wep == "1") { addon = "<option class='dropdown-debug'>" + item.name + "</option>" }
 						if (group != "charms") { addon = "<option selected>" + "­ ­ ­ ­ " + item.name + "</option>" }
 						else { addon = "<option disabled selected>" + "­ ­ ­ ­ " + item.name + "</option>" }
 					} else {
@@ -1363,6 +1380,7 @@ function loadItems(group, dropdown, className) {
 							}
 						}
 					}
+//					if (synthwep != 0 && item.synth_wep == "1") { addon = "<option class='dropdown-debug'>" + item.name + "</option>" }
 					choices += addon
 					if (className == "assassin" && item.name == "Offhand") { choices += offhandSetup }	// weapons inserted into offhand dropdown list
 					if (className == "assassin" && item.type == "claw") { choices_offhand += addon }
@@ -2270,7 +2288,7 @@ function getCharacterInfo() {
 	} }
 	charInfo += "},selectedSkill:["+selectedSkill[0]+","+selectedSkill[1]
 	charInfo += "],mercenary:'"+mercenary.name+"'"
-	charInfo += ",settings:{coupling:"+settings.coupling+",autocast:"+settings.autocast
+	charInfo += ",settings:{coupling:"+settings.coupling+",autocast:"+settings.autocast+",synthwep:"+settings.synthwep
 	charInfo += "},ironGolem:"+golemItem.name
 	charInfo += "}"
 //	document.getElementById("fhr_bp").innerHTML = charInfo.fhr_bp
@@ -2431,6 +2449,7 @@ function setCharacterInfo(className) {
 	startup(className)
 	if (settings.coupling == 0) { document.getElementById("coupling").checked = true; toggleCoupling(document.getElementById("coupling")); }
 	if (settings.autocast == 0) { document.getElementById("autocast").checked = true; toggleAutocast(document.getElementById("autocast")); }
+	if (settings.synthwep == 0) { document.getElementById("synthwep").checked = true; togglesynthwep(document.getElementById("synthwep")); }
 	if (character.difficulty != fileInfo.character.difficulty) { document.getElementById("difficulty3").checked = false; document.getElementById("difficulty"+fileInfo.character.difficulty).checked = true; changeDifficulty(fileInfo.character.difficulty) }
 	if (character.running != fileInfo.character.running) { document.getElementById("running").checked = true; toggleRunning(document.getElementById("running")) }
 	if (character.quests_completed != fileInfo.character.quests_completed) { document.getElementById("quests").checked = true; toggleQuests(document.getElementById("quests")) }
@@ -2507,6 +2526,7 @@ function setCharacterInfo(className) {
 	for (stat in fileInfo.character) { character[stat] = fileInfo.character[stat] }
 	if (settings.coupling != fileInfo.settings.coupling) { if (settings.coupling == 1) { document.getElementById("coupling").checked = false }; toggleCoupling(document.getElementById("coupling")) }
 	if (settings.autocast != fileInfo.settings.autocast) { if (settings.autocast == 1) { document.getElementById("autocast").checked = false }; toggleAutocast(document.getElementById("autocast")) }
+	if (settings.synthwep != fileInfo.settings.synthwep) { if (settings.synthwep == 1) { document.getElementById("synthwep").checked = false }; togglesynthwep(document.getElementById("synthwep")) }
 	//updateStats()
 	document.getElementById("inputTextToSave").value = ""
 	update()
@@ -4734,6 +4754,7 @@ function updateURL() {
 	params.set('energy', ~~character.energy_added)
 	params.set('url', ~~settings.parameters)
 	params.set('coupling', ~~settings.coupling)
+	params.set('synthwep', ~~settings.synthwep)
 	if (game_version == 2) { params.set('autocast', ~~settings.autocast) } else if (params.has('autocast')) { params.delete('autocast') }
 	//params.set('autocast', ~~settings.autocast)
 	var param_skills = '';
